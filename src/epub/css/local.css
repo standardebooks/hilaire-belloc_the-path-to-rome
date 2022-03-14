@@ -1,2 +1,257 @@
 @charset "utf-8";
 @namespace epub "http://www.idpf.org/2007/ops";
+@namespace xml "http://www.w3.org/XML/1998/namespace";
+
+/* block level italic xml lang */
+blockquote[xml|lang]{
+	font-style: italic;
+}
+/* end block level italics */
+
+/* Figure */
+figure{
+	break-inside: avoid;
+}
+
+figure img{
+	display: block;
+	margin: auto;
+	max-width: 100%;
+}
+
+figcaption{
+	font-size: .75em;
+	font-style: italic;
+	margin: 1em;
+}
+
+figcaption p + p{
+	text-indent: 0;
+}
+/* End Figure */
+
+/* Verse, Poem, Song, Hymn */
+[epub|type~="z3998:verse"] p,
+[epub|type~="z3998:poem"] p,
+[epub|type~="z3998:song"] p,
+[epub|type~="z3998:hymn"] p{
+	text-align: initial;
+	text-indent: 0;
+}
+
+[epub|type~="z3998:verse"] p + p,
+[epub|type~="z3998:poem"] p + p,
+[epub|type~="z3998:song"] p + p,
+[epub|type~="z3998:hymn"] p + p{
+	margin-top: 1em;
+}
+
+[epub|type~="z3998:verse"] p > span,
+[epub|type~="z3998:poem"] p > span,
+[epub|type~="z3998:song"] p > span,
+[epub|type~="z3998:hymn"] p > span{
+	display: block;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+[epub|type~="z3998:verse"] p > span + br,
+[epub|type~="z3998:poem"] p > span + br,
+[epub|type~="z3998:song"] p > span + br,
+[epub|type~="z3998:hymn"] p > span + br{
+	display: none;
+}
+
+p span.i1{
+	padding-left: 2em;
+	text-indent: -1em;
+}
+
+p span.i2{
+	padding-left: 3em;
+	text-indent: -1em;
+}
+
+p span.i3{
+	padding-left: 4em;
+	text-indent: -1em;
+}
+/* End Verse */
+
+/* Drama */
+[epub|type~="z3998:drama"] table,
+table[epub|type~="z3998:drama"]{
+	border-collapse: collapse;
+	margin: 1em auto;
+	width: 100%;
+}
+
+[epub|type~="z3998:drama"] tr:first-child td{
+	padding-top: 0;
+}
+
+[epub|type~="z3998:drama"] tr:last-child td{
+	padding-bottom: 0;
+}
+
+[epub|type~="z3998:drama"] td{
+	padding: .5em;
+	vertical-align: top;
+}
+
+[epub|type~="z3998:drama"] td:last-child{
+	padding-right: 0;
+}
+
+[epub|type~="z3998:drama"] td:first-child{
+	padding-left: 0;
+}
+
+[epub|type~="z3998:drama"] td[epub|type~="z3998:persona"]{
+	hyphens: none;
+	-epub-hyphens: none;
+	text-align: right;
+	width: 20%;
+}
+
+[epub|type~="z3998:stage-direction"]{
+	font-style: italic;
+}
+
+[epub|type~="z3998:stage-direction"] [epub|type~="z3998:persona"],
+em [epub|type~="z3998:persona"],
+i [epub|type~="z3998:persona"]{
+	font-style: normal;
+}
+
+[epub|type~="z3998:stage-direction"]::before{
+	content: "(";
+	font-style: normal;
+}
+
+[epub|type~="z3998:stage-direction"]::after{
+	content: ")";
+	font-style: normal;
+}
+
+[epub|type~="z3998:persona"]{
+	font-variant: all-small-caps;
+}
+
+section[epub|type~="z3998:scene"] > p{
+	margin: 1em auto;
+	width: 75%;
+}
+/* End Drama */
+
+/* Custom Styles */
+span#line137smalltext{
+	font-size: 70%;
+}
+
+#the-path-to-rome > ol:nth-of-type(3) > li:first-of-type{
+	list-style-type: none;
+}
+
+span#large-offset-H{
+	font-family: sans-serif;
+	font-size: 140%;
+	position: relative;
+	top: .1em;
+}
+
+/* Customized dramatic dialogue between an 
+     imagined reader and the writer used in this book */
+[epub|type~="z3998:drama"].lector-auctor-dialogue td:last-child{
+	width: 100%;
+}
+
+[epub|type~="z3998:drama"].lector-auctor-dialogue td[epub|type~="z3998:persona"]{
+	width: unset;
+}
+/* End customized dramatic dialogue
+	
+
+/* bracketed lists, with curly brace and rotated text after curly brace 
+   falls back to simple list followed by text and no curly brace when flex layout or transforms are unsupported */
+
+div > ul{
+	all: unset;
+	list-style-type: none;
+	width: 12em;	
+	position: relative;
+}
+
+@supports((display: inline-flex) and (transform: scaleX(25%))){
+	div{
+		all: unset;
+		display: inline-flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		padding: 1em 1em 1em 1em;
+		position: relative;
+	}
+
+	div > span:nth-of-type(1){
+		all: unset;
+		font-family: serif;
+		margin-bottom: -.22em;
+		margin-left: -.2em;
+		margin-right: -.15em;
+		transform: scaleX(25%) translateY(-18%);
+	}
+
+	div:nth-of-type(1) > span:nth-of-type(1),
+	div:nth-of-type(2) > span:nth-of-type(1){
+		font-size: 16rem;
+	}
+
+	div:nth-of-type(3) > span:nth-of-type(1){
+		font-size: 11rem;
+	}
+
+	div > span:nth-of-type(2){
+		align-items: baseline;
+		all: unset;
+		margin: 0;
+		overflow: hidden;
+		transform: scale(-1) translateY(18%);
+		writing-mode: vertical-lr;
+	}
+}
+
+@supports not (((display: inline-flex) and (transform: scaleX(25%)))){
+	div{
+		all: unset;
+		display: inline-block;
+		padding: 1em 1em 1em 1em;
+	}
+
+	div > span:nth-of-type(1){
+		display: none;
+	}
+
+	div > span:nth-of-type(2){
+		all: unset;
+		display: block;
+		padding-top: .5em;
+		padding-left: 2em;
+		text-indent: -1em;
+	}
+}
+
+li.i1{
+	padding-left: 2em;
+	text-indent: -1em;
+}
+
+li.i2{
+	padding-left: 3em;
+	text-indent: -1em;
+}
+
+li.i3{
+	padding-left: 4em;
+	text-indent: -1em;
+}
+/* end bracketed lists */
