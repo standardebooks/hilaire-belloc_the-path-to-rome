@@ -145,6 +145,17 @@ section[epub|type~="z3998:scene"] > p{
 /* End Drama */
 
 /* Custom Styles */
+/* Customized dramatic dialogue between an 
+     imagined reader and the writer used in this book */
+[epub|type~="z3998:drama"].lector-auctor-dialogue td:last-child{
+	width: 100%;
+}
+
+[epub|type~="z3998:drama"].lector-auctor-dialogue td[epub|type~="z3998:persona"]{
+	width: unset;
+}
+/* End customized dramatic dialogue */
+
 span#line137smalltext{
 	font-size: 70%;
 }
@@ -160,98 +171,107 @@ span#large-offset-H{
 	top: .1em;
 }
 
-/* Customized dramatic dialogue between an 
-     imagined reader and the writer used in this book */
-[epub|type~="z3998:drama"].lector-auctor-dialogue td:last-child{
-	width: 100%;
-}
-
-[epub|type~="z3998:drama"].lector-auctor-dialogue td[epub|type~="z3998:persona"]{
-	width: unset;
-}
-/* End customized dramatic dialogue
-	
-
 /* bracketed lists, with curly brace and rotated text after curly brace 
    falls back to simple list followed by text and no curly brace when flex layout or transforms are unsupported */
-
-div > ul{
-	all: unset;
-	list-style-type: none;
-	width: 12em;	
-	position: relative;
+div.bracketed-list-with-label{
+	display: inline-block;
+	padding: 1em;
+	padding-right: 1.5em;
 }
 
-@supports((display: inline-flex) and (transform: scaleX(25%))){
-	div{
-		all: unset;
+div.bracketed-list-with-label > ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+div.bracketed-list-with-label > span{
+	display: block;
+	margin-top: 1em;
+}
+
+/* Must support flexbox and transform */
+@supports((display: inline-flex) and (display: flex) and (transform: rotate(90deg))){
+	div.bracketed-list-with-label{
 		display: inline-flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
-		padding: 1em 1em 1em 1em;
+	}
+
+	div.bracketed-list-with-label > ul{
 		position: relative;
 	}
 
-	div > span:nth-of-type(1){
-		all: unset;
-		font-family: serif;
-		margin-bottom: -.22em;
-		margin-left: -.2em;
-		margin-right: -.15em;
-		transform: scaleX(25%) translateY(-18%);
+	div.bracketed-list-with-label > ul::after{
+		background-image: url("../images/curly-bracket.svg");
+		background-size: 100% 100%;
+		content: " ";
+		height: 100%;
+		position: absolute;
+		right: -1.5em;
+		top: 0;
+		width: 1em;
 	}
 
-	div:nth-of-type(1) > span:nth-of-type(1),
-	div:nth-of-type(2) > span:nth-of-type(1){
-		font-size: 16rem;
+	div.bracketed-list-with-label > span{
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		margin-left: 2em;
+		margin-top: 0;
+		transform: rotate(-90deg);
+		white-space: nowrap;
+		width: 1em;
 	}
 
-	div:nth-of-type(3) > span:nth-of-type(1){
-		font-size: 11rem;
+	/* Customize spacing and size for shorter lists */
+	div.bracketed-list-with-label:nth-of-type(3) > ul::after{
+		width: .75em;
 	}
 
-	div > span:nth-of-type(2){
-		align-items: baseline;
-		all: unset;
-		margin: 0;
-		overflow: hidden;
-		transform: scale(-1) translateY(18%);
-		writing-mode: vertical-lr;
-	}
-}
-
-@supports not (((display: inline-flex) and (transform: scaleX(25%)))){
-	div{
-		all: unset;
-		display: inline-block;
-		padding: 1em 1em 1em 1em;
+	div.bracketed-list-with-label:nth-of-type(4) > ul::after{
+		right: -1em;
+		width: .5em;
 	}
 
-	div > span:nth-of-type(1){
-		display: none;
-	}
-
-	div > span:nth-of-type(2){
-		all: unset;
-		display: block;
-		padding-top: .5em;
-		padding-left: 2em;
-		text-indent: -1em;
+	div.bracketed-list-with-label:nth-of-type(4) > span{
+		margin-left: 1.25em;
 	}
 }
+/* end bracketed lists */
 
-li.i1{
+/* indententation within 3rd bracketed list */
+#the-path-to-rome div.bracketed-list-with-label:nth-of-type(3) > ul > li:nth-of-type(7){
+	padding-left: 4em;
+	text-indent: -1em;
+}
+
+#the-path-to-rome div.bracketed-list-with-label:nth-of-type(3) > ul > li:nth-of-type(8){
 	padding-left: 2em;
 	text-indent: -1em;
 }
 
-li.i2{
-	padding-left: 3em;
-	text-indent: -1em;
+/* 'plays without words' section */
+#illustration-plays-without-words-musical-notes{
+	height: 3em;
+	vertical-align: middle;
 }
 
-li.i3{
-	padding-left: 4em;
-	text-indent: -1em;
+#illustration-plays-without-words-duchess-finger{
+	height: 2em;
+	vertical-align: middle;
 }
-/* end bracketed lists */
+
+#illustration-plays-without-words-sine-wave{
+	height: .75em;
+	vertical-align: middle;
+}
+
+#illustration-plays-without-words-crossed-swords{
+	height: 1em;
+	vertical-align: bottom;
+}
+
+#illustration-plays-without-words-rectangles{
+	height: 1em;
+}
+/* end 'plays without words' section */
+
