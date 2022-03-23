@@ -145,6 +145,17 @@ section[epub|type~="z3998:scene"] > p{
 /* End Drama */
 
 /* Custom Styles */
+
+/* small page headers above each printed page */
+.section-page-head{
+	font-size: 90%;
+	font-variant: small-caps;
+	margin-bottom: 0.75em;
+	margin-top: 1em;
+	text-align: right;
+}
+/* end headers above each page */
+
 /* Customized dramatic dialogue between an 
      imagined reader and the writer used in this book */
 [epub|type~="z3998:drama"].lector-auctor-dialogue td:last-child{
@@ -156,20 +167,13 @@ section[epub|type~="z3998:scene"] > p{
 }
 /* End customized dramatic dialogue */
 
-span#line137smalltext{
-	font-size: 70%;
+
+
+/* Fit longer illustrations in the viewport */
+figure img{
+	max-height: 90vh;
 }
 
-#the-path-to-rome > ol:nth-of-type(3) > li:first-of-type{
-	list-style-type: none;
-}
-
-span#large-offset-H{
-	font-family: sans-serif;
-	font-size: 140%;
-	position: relative;
-	top: .1em;
-}
 
 /* bracketed lists, with curly brace and rotated text after curly brace 
    falls back to simple list followed by text and no curly brace when flex layout or transforms are unsupported */
@@ -238,15 +242,20 @@ div.bracketed-list-with-label > span{
 }
 /* end bracketed lists */
 
-/* indententation within 3rd bracketed list */
-#the-path-to-rome div.bracketed-list-with-label:nth-of-type(3) > ul > li:nth-of-type(7){
-	padding-left: 4em;
-	text-indent: -1em;
+/* Small letters */
+#the-path-to-rome #TheRediculousTownHall span{
+	font-size: 70%;
 }
 
-#the-path-to-rome div.bracketed-list-with-label:nth-of-type(3) > ul > li:nth-of-type(8){
-	padding-left: 2em;
-	text-indent: -1em;
+/* Large 'H' character */
+#the-path-to-rome #MoreonStyle span{
+	font-family: sans-serif;
+	font-size: 140%;
+	vertical-align: middle;
+}
+
+#the-path-to-rome > ol:nth-of-type(3) > li:first-of-type{
+	list-style-type: none;
 }
 
 /* 'plays without words' section */
@@ -274,4 +283,16 @@ div.bracketed-list-with-label > span{
 	height: 1em;
 }
 /* end 'plays without words' section */
+
+/* indentenation within final list for 'these circumstances'  */
+section#InAllTheseCircumstances div:nth-of-type(3) li:nth-of-type(7){
+	padding-left: 4em;
+	text-indent: -1em;
+}
+section#InAllTheseCircumstances div:nth-of-type(3) li:nth-of-type(8){
+	padding-left: 2em;
+	text-indent: -1em;
+}
+/* end indentenation within final bracketed list */
+
 
