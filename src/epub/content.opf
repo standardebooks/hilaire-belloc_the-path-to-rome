@@ -45,7 +45,7 @@
 		<dc:language>en-GB</dc:language>
 		<dc:source>https://www.gutenberg.org/ebooks/7373</dc:source>
 		<dc:source>https://archive.org/details/pathtorome00bell/</dc:source>
-		<dc:source>https://archive.org/details/pathtorome01bell/</dc:source>		
+		<dc:source>https://archive.org/details/pathtorome01bell/</dc:source>
 		<meta property="se:production-notes">PRODUCTION_NOTES</meta>
 		<meta property="se:word-count">WORD_COUNT</meta>
 		<meta property="se:reading-ease.flesch">READING_EASE</meta>
