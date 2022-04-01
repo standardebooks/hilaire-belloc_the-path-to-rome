@@ -144,8 +144,13 @@ section[epub|type~="z3998:scene"] > p{
 }
 /* End Drama */
 
-/* Custom Styles */
+/* Era */
+abbr[epub|type~="se:era"]{
+	font-variant: all-small-caps;
+}
+/* End Era */
 
+/* Custom Styles */
 /* Poetry blockquote headers */
 [epub|type~="z3998:poem"] header p,
 [epub|type~="z3998:song"] header p{
@@ -165,13 +170,14 @@ section[epub|type~="z3998:scene"] > p{
 
 /* small page headers above each printed page */
 section#the-path-to-rome section > header p{
-	font-size: 90%;
+	font-size: .9em;
 	font-variant: small-caps;
-	margin-top: .75em;
+	margin-top: .5em;
 	padding-bottom: 0;
 	text-align: right;
 }
-section#the-path-to-rome section > header + * {
+
+section#the-path-to-rome section > header + *{
 	margin-top: 1em;
 }
 /* end headers above each page */
@@ -259,62 +265,68 @@ div.bracketed-list-with-label > span{
 }
 /* end bracketed lists */
 
-/* Small letters */
-#the-path-to-rome #TheRediculousTownHall span{
-	font-size: 70%;
+/* Small styled letters */
+#the-path-to-rome #the-ridiculous-town-hall span{
+	font-size: .75em;
 }
 
 /* Large 'H' character */
-#the-path-to-rome #MoreonStyle span{
+#the-path-to-rome #more-on-style span{
 	font-family: sans-serif;
-	font-size: 140%;
+	font-size: 1.5em;
 	vertical-align: middle;
 }
 
 /* 'Theory of Blessings' section, don't display interrupted list item number again */
-#TheoryofBlessings > ol:nth-of-type(2) > li:nth-of-type(1){
+#the-path-to-rome #theory-of-blessings > ol:nth-of-type(2) > li:nth-of-type(1){
 	list-style-type: none;
 }
 
 /* 'plays without words' section */
-#illustration-plays-without-words-musical-notes{
+/* illustration-plays-without-words-musical-notes */
+section#the-path-to-rome section#plays-without-words table tr:nth-of-type(4) img{
 	height: 3em;
-	vertical-align: middle;
+	vertical-align: top;
 }
 
-#illustration-plays-without-words-duchess-finger{
+/* illustration-plays-without-words-duchess-finger */
+section#the-path-to-rome section#plays-without-words table tr:nth-of-type(5) img{
 	height: 2em;
-	vertical-align: middle;
+	vertical-align: top;
 }
 
-#illustration-plays-without-words-sine-wave{
+/* illustration-plays-without-words-sine-wave */
+section#the-path-to-rome section#plays-without-words table tr:nth-of-type(6) img{
 	height: .75em;
 	vertical-align: middle;
 }
 
-#illustration-plays-without-words-crossed-swords{
+/* illustration-plays-without-words-crossed-swords */
+section#the-path-to-rome section#plays-without-words table tr:nth-of-type(9) img{
 	height: 1em;
-	vertical-align: bottom;
+	vertical-align: top;
 }
 
-#illustration-plays-without-words-rectangles{
+/* illustration-plays-without-words-rectangles */
+section#the-path-to-rome section#plays-without-words table tr:nth-of-type(10) img{
 	height: 1em;
+	vertical-align: middle;
 }
 /* end 'plays without words' section */
 
-/* indentenation within final list for 'these circumstances' */
-section#InAllTheseCircumstances div:nth-of-type(3) li:nth-of-type(7){
+/* indentation within final list for 'these circumstances' */
+section#the-path-to-rome section#in-all-these-circumstances div:nth-of-type(3) li:nth-of-type(7){
 	padding-left: 4em;
 	text-indent: -1em;
 }
 
-section#InAllTheseCircumstances div:nth-of-type(3) li:nth-of-type(8){
+section#the-path-to-rome section#in-all-these-circumstances div:nth-of-type(3) li:nth-of-type(8){
 	padding-left: 2em;
 	text-indent: -1em;
 }
-/* end indentenation within final bracketed list */
+/* end indentation within final bracketed list */
 
-section#StoryofMrHard ul{
+section#story-of-mr-hard ul{
 	list-style: none;
 	list-style-type: none;
 }
