@@ -8,28 +8,6 @@ blockquote[xml|lang]{
 }
 /* end block level italics */
 
-/* Figure */
-figure{
-	break-inside: avoid;
-}
-
-figure img{
-	display: block;
-	margin: auto;
-	max-width: 100%;
-}
-
-figcaption{
-	font-size: .75em;
-	font-style: italic;
-	margin: 1em;
-}
-
-figcaption p + p{
-	text-indent: 0;
-}
-/* End Figure */
-
 /* Verse, Poem, Song, Hymn */
 [epub|type~="z3998:verse"] p,
 [epub|type~="z3998:poem"] p,
@@ -168,35 +146,39 @@ abbr[epub|type~="se:era"]{
 }
 /* End poetry blockquote headers */
 
-/* small page headers above each printed page */
+/* small page headers above each printed page which section the text */
 section#the-path-to-rome section > header p{
-	font-size: .9em;
 	font-variant: small-caps;
-	margin-top: .5em;
+	margin-right: 2em;
+	margin-top: 1em;
 	padding-bottom: 0;
 	text-align: right;
 }
 
+section#the-path-to-rome section header + p{
+	text-indent: 1em;
+}
+
+section#the-path-to-rome section:nth-of-type(1) header + p{
+	text-indent: 0;
+}
+
 section#the-path-to-rome section > header + *{
-	margin-top: 1em;
+	margin-top: .5em;
 }
 /* end headers above each page */
 
-/* Customized dramatic dialogue between an 
-     imagined reader and the writer used in this book */
-[epub|type~="z3998:drama"].lector-auctor-dialogue td:last-child{
-	width: 100%;
+/* Customized dramatic dialogue between an imagined reader ('Lector') and the writer ('Auctor') */
+p.lector-auctor-dialogue{
+	margin-top: 0.5em;
+	text-indent: 1em;
 }
 
-[epub|type~="z3998:drama"].lector-auctor-dialogue td[epub|type~="z3998:persona"]{
-	width: 0;
+p.lector-auctor-dialogue b[epub|type~="z3998:persona"]{
+	font-variant: small-caps;
+	margin-right: 0.5em;
 }
 /* End customized dramatic dialogue */
-
-/* Fit longer illustrations in the viewport */
-figure img{
-	max-height: 90vh;
-}
 
 /* bracketed lists, with curly brace and rotated text after curly brace 
    falls back to simple list followed by text and no curly brace when flex layout or transforms are unsupported */
@@ -291,7 +273,7 @@ section#the-path-to-rome section#plays-without-words table tr:nth-of-type(4) img
 
 /* illustration-plays-without-words-duchess-finger */
 section#the-path-to-rome section#plays-without-words table tr:nth-of-type(5) img{
-	height: 2em;
+	height: 1.25em;
 	vertical-align: top;
 }
 
@@ -329,4 +311,62 @@ section#the-path-to-rome section#in-all-these-circumstances div:nth-of-type(3) l
 section#story-of-mr-hard ul{
 	list-style: none;
 	list-style-type: none;
+}
+
+/* Illustrations */
+/* Figure */
+figure{
+	break-inside: avoid;
+	margin: 1em auto;
+	text-align: center;
+}
+
+figure img{
+	display: block;
+	margin: auto;
+	max-width: 100%;
+}
+
+figcaption{
+	font-size: .75em;
+	font-style: italic;
+	margin: 1em;
+}
+
+figcaption p + p{
+	text-indent: 0;
+}
+
+/* full page */
+figure.full-page{
+	break-after: page;
+	break-before: page;
+	break-inside: avoid;
+	margin: 0;
+	max-height: 100vh;
+	text-align: center;
+}
+
+@supports(display: flex){
+	figure.full-page{
+		display: flex;
+		flex-direction: column;
+	}
+
+	figure.full-page img{
+		height: 100vh;
+		object-fit: contain;
+	}
+}
+
+figure{
+	align-items: center;
+	display: block;
+	height: 100%;
+}
+
+figure img{
+	display: block;
+	max-height: 95vh;
+	max-width: 100%;
 }
