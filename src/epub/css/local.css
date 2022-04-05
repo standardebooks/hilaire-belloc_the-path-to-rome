@@ -315,29 +315,7 @@ section#story-of-mr-hard ul{
 
 /* Illustrations */
 /* Figure */
-figure{
-	break-inside: avoid;
-	margin: 1em auto;
-	text-align: center;
-}
-
-figure img{
-	display: block;
-	margin: auto;
-	max-width: 100%;
-}
-
-figcaption{
-	font-size: .75em;
-	font-style: italic;
-	margin: 1em;
-}
-
-figcaption p + p{
-	text-indent: 0;
-}
-
-/* full page */
+/* If the image is meant to be on its own page, use this selector... */
 figure.full-page{
 	break-after: page;
 	break-before: page;
@@ -359,14 +337,42 @@ figure.full-page{
 	}
 }
 
+/* If the image is meant to be aligned block-level with the text, use this selector... */
 figure{
-	align-items: center;
-	display: block;
-	height: 100%;
+	break-inside: avoid;
+	margin: 1em auto;
+	text-align: center;
+}
+
+/* In all cases, also include the below styles */
+figure{
+	break-inside: avoid;
 }
 
 figure img{
 	display: block;
-	max-height: 95vh;
+	margin: auto;
 	max-width: 100%;
+}
+
+figcaption{
+	font-size: .75em;
+	font-style: italic;
+	margin: 1em;
+}
+
+figcaption p + p{
+	text-indent: 0;
+}
+
+figure#illustration-48 img,
+figure#illustration-49 img 
+{
+	max-width: 90vw;
+	max-height: 100px;
+}
+
+figure#illustration-48 figcaption p,
+figure#illustration-49 figcaption p {
+	text-align: center;
 }
