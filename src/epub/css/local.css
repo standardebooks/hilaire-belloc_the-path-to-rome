@@ -17,6 +17,10 @@ blockquote[xml|lang]{
 	text-indent: 0;
 }
 
+[epub|type~="z3998:song"] p + p{
+	margin-top: 1em;
+}
+
 [epub|type~="z3998:verse"] p > span,
 [epub|type~="z3998:poem"] p > span,
 [epub|type~="z3998:song"] p > span,
@@ -126,14 +130,9 @@ figcaption{
 	font-style: italic;
 	margin: 1em;
 }
-
-figcaption p + p{
-	text-indent: 0;
-}
 /* End Illustrations */
 
 /* Custom Styles (not copied/pasted from the manual) */
-
 /* Shoulder Notes (taken from the headers above each printed page, that section the text) */
 section#the-path-to-rome section > header p{
 	font-variant: small-caps;
@@ -156,22 +155,11 @@ section#the-path-to-rome section > header + *{
 }
 /* End shoulder notes */
 
-/* Poetry blockquote headers */
-[epub|type~="z3998:poem"] header p,
-[epub|type~="z3998:song"] header p{
-	text-align: center;
+/* Song blockquote headers */
+[epub|type~="z3998:song"] header{
+	margin-bottom: 1em;
 }
-
-[epub|type~="z3998:poem"] header p > span[epub|type~="z3998:roman"]{
-	display: inline;
-	padding-left: 0;
-	text-indent: 0;
-}
-
-[epub|type~="z3998:poem"] header p + p{
-	margin-top: 0;
-}
-/* End poetry blockquote headers */
+/* End song blockquote headers */
 
 /* Customized dramatic dialogue between an imagined reader ('Lector') and the writer ('Auctor') */
 p.lector-auctor-dialogue{
@@ -252,8 +240,7 @@ div.bracketed-list-with-label > span{
 }
 /* end bracketed lists */
 
-
-/* Small typeface for quote  */
+/* Small typeface for quote */
 section#the-path-to-rome section#the-ridiculous-town-hall span{
 	font-size: .75em;
 }
@@ -314,6 +301,9 @@ section#story-of-mr-hard ul{
 	list-style-type: none;
 }
 
+section#loud-and-final-song blockquote p:nth-of-type(4){
+	padding-left: 2em;
+}
 
 /* Figure Overrides */
 
