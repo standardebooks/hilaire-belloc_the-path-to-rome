@@ -17,13 +17,6 @@ blockquote[xml|lang]{
 	text-indent: 0;
 }
 
-[epub|type~="z3998:verse"] p + p,
-[epub|type~="z3998:poem"] p + p,
-[epub|type~="z3998:song"] p + p,
-[epub|type~="z3998:hymn"] p + p{
-	margin-top: 1em;
-}
-
 [epub|type~="z3998:verse"] p > span,
 [epub|type~="z3998:poem"] p > span,
 [epub|type~="z3998:song"] p > span,
@@ -35,8 +28,7 @@ blockquote[xml|lang]{
 
 [epub|type~="z3998:verse"] p > span + br,
 [epub|type~="z3998:poem"] p > span + br,
-[epub|type~="z3998:song"] p > span + br,
-[epub|type~="z3998:hymn"] p > span + br{
+[epub|type~="z3998:song"] p > span + br{
 	display: none;
 }
 
@@ -57,7 +49,6 @@ p span.i3{
 /* End Verse */
 
 /* Drama */
-[epub|type~="z3998:drama"] table,
 table[epub|type~="z3998:drama"]{
 	border-collapse: collapse;
 	margin: 1em auto;
@@ -96,12 +87,6 @@ table[epub|type~="z3998:drama"]{
 	font-style: italic;
 }
 
-[epub|type~="z3998:stage-direction"] [epub|type~="z3998:persona"],
-em [epub|type~="z3998:persona"],
-i [epub|type~="z3998:persona"]{
-	font-style: normal;
-}
-
 [epub|type~="z3998:stage-direction"]::before{
 	content: "(";
 	font-style: normal;
@@ -115,11 +100,6 @@ i [epub|type~="z3998:persona"]{
 [epub|type~="z3998:persona"]{
 	font-variant: all-small-caps;
 }
-
-section[epub|type~="z3998:scene"] > p{
-	margin: 1em auto;
-	width: 75%;
-}
 /* End Drama */
 
 /* Era */
@@ -128,25 +108,33 @@ abbr[epub|type~="se:era"]{
 }
 /* End Era */
 
-/* Custom Styles */
-/* Poetry blockquote headers */
-[epub|type~="z3998:poem"] header p,
-[epub|type~="z3998:song"] header p{
+/* Illustrations */
+figure{
+	break-inside: avoid;
+	margin: 1em auto;
 	text-align: center;
 }
 
-[epub|type~="z3998:poem"] header p > span[epub|type~="z3998:roman"]{
-	display: inline;
-	padding-left: 0;
+figure img{
+	display: block;
+	margin: auto;
+	max-width: 100%;
+}
+
+figcaption{
+	font-size: .75em;
+	font-style: italic;
+	margin: 1em;
+}
+
+figcaption p + p{
 	text-indent: 0;
 }
+/* End Illustrations */
 
-[epub|type~="z3998:poem"] header p + p{
-	margin-top: 0;
-}
-/* End poetry blockquote headers */
+/* Custom Styles (not copied/pasted from the manual) */
 
-/* small page headers above each printed page which section the text */
+/* Shoulder Notes (taken from the headers above each printed page, that section the text) */
 section#the-path-to-rome section > header p{
 	font-variant: small-caps;
 	margin-right: 2em;
@@ -166,7 +154,24 @@ section#the-path-to-rome section:nth-of-type(1) header + p{
 section#the-path-to-rome section > header + *{
 	margin-top: .5em;
 }
-/* end headers above each page */
+/* End shoulder notes */
+
+/* Poetry blockquote headers */
+[epub|type~="z3998:poem"] header p,
+[epub|type~="z3998:song"] header p{
+	text-align: center;
+}
+
+[epub|type~="z3998:poem"] header p > span[epub|type~="z3998:roman"]{
+	display: inline;
+	padding-left: 0;
+	text-indent: 0;
+}
+
+[epub|type~="z3998:poem"] header p + p{
+	margin-top: 0;
+}
+/* End poetry blockquote headers */
 
 /* Customized dramatic dialogue between an imagined reader ('Lector') and the writer ('Auctor') */
 p.lector-auctor-dialogue{
@@ -180,8 +185,8 @@ p.lector-auctor-dialogue b[epub|type~="z3998:persona"]{
 }
 /* End customized dramatic dialogue */
 
-/* bracketed lists, with curly brace and rotated text after curly brace 
-   falls back to simple list followed by text and no curly brace when flex layout or transforms are unsupported */
+/* Bracketed lists, with curly brace and rotated text after curly brace 
+   Falls back to simple list followed by text and no curly brace when flex layout or transforms are unsupported */
 div.bracketed-list-with-label{
 	display: inline-block;
 	padding: 1em;
@@ -247,21 +252,17 @@ div.bracketed-list-with-label > span{
 }
 /* end bracketed lists */
 
-/* Small styled letters */
-#the-path-to-rome #the-ridiculous-town-hall span{
+
+/* Small typeface for quote  */
+section#the-path-to-rome section#the-ridiculous-town-hall span{
 	font-size: .75em;
 }
 
-/* Large 'H' character */
-#the-path-to-rome #more-on-style span{
+/* Larger typeface 'H' character indicating the shape of the land */
+section#the-path-to-rome section#more-on-style span{
 	font-family: sans-serif;
 	font-size: 1.5em;
 	vertical-align: middle;
-}
-
-/* 'Theory of Blessings' section, don't display interrupted list item number again */
-#the-path-to-rome #theory-of-blessings > ol:nth-of-type(2) > li:nth-of-type(1){
-	list-style-type: none;
 }
 
 /* 'plays without words' section */
@@ -313,66 +314,46 @@ section#story-of-mr-hard ul{
 	list-style-type: none;
 }
 
-/* Illustrations */
-/* Figure */
-/* If the image is meant to be on its own page, use this selector... */
-figure.full-page{
-	break-after: page;
-	break-before: page;
-	break-inside: avoid;
-	margin: 0;
-	max-height: 100vh;
-	text-align: center;
-}
 
-@supports(display: flex){
-	figure.full-page{
-		display: flex;
-		flex-direction: column;
-	}
-
-	figure.full-page img{
-		height: 100vh;
-		object-fit: contain;
-	}
-}
-
-/* If the image is meant to be aligned block-level with the text, use this selector... */
-figure{
-	break-inside: avoid;
-	margin: 1em auto;
-	text-align: center;
-}
-
-/* In all cases, also include the below styles */
-figure{
-	break-inside: avoid;
-}
-
-figure img{
-	display: block;
-	margin: auto;
-	max-width: 100%;
-}
-
-figcaption{
-	font-size: .75em;
-	font-style: italic;
-	margin: 1em;
-}
-
-figcaption p + p{
-	text-indent: 0;
-}
+/* Figure Overrides */
 
 figure#illustration-48 img,
-figure#illustration-49 img 
-{
-	max-width: 90vw;
+figure#illustration-49 img{
 	max-height: 100px;
+	max-width: 90vw;
 }
 
 figure#illustration-48 figcaption p,
-figure#illustration-49 figcaption p {
+figure#illustration-49 figcaption p{
 	text-align: center;
 }
+
+/* Float tall images to the left on wider screens, based on text size and approximate image size (~16 px to 1em, generally) */
+@media (min-width: 60em) {
+	figure#illustration-4 {
+		margin-right: 2em;
+		float: left;		
+	}	
+}
+
+figure#illustration-4 {
+	max-width: 30em;	
+}
+
+figure#illustration-4 img {	
+	max-height: 95vh;
+	min-height: 30em;
+}
+
+
+
+
+
+section#the-view-of-toul {
+	clear: both;
+}
+
+
+
+
+
