@@ -42,13 +42,15 @@
 		<meta property="se:subject">TAG</meta>
 		<dc:description id="description">Hilaire Belloc walks on a pilgrimage to Rome from Toul in Lorraine, France, sketching and writing of the journey as well as engaging in numerous reflections on varied subjects.</dc:description>
 		<meta id="long-description" property="se:long-description" refines="#description">
-			&lt;p&gt;British-French writer and historian &lt;a href=&quot;https://standardebooks.org/ebooks/hilaire-belloc&quot;&gt;Hilaire Belloc&lt;/a&gt;’s first travelogue, which describes the pilgrimage he makes to Rome as the result of a vow he made while visiting his hometown of Toul, in Lorraine, France. &lt;i&gt;The Path to Rome&lt;/i&gt; is far more than a simple travelogue. Alongside the narrative of the journey, Belloc wanders into topics as varied as the art of writing, life in the military, religion, the middle class, literary criticism, music, poetry, and much more.&lt;/p&gt;
+			&lt;p&gt;British-French writer and historian &lt;a href="https://standardebooks.org/ebooks/hilaire-belloc"&gt;Hilaire Belloc&lt;/a&gt;’s first travelogue, which describes the pilgrimage he makes to Rome as the result of a vow he made while visiting his hometown of Toul, in Lorraine, France. &lt;i&gt;The Path to Rome&lt;/i&gt; is far more than a simple travelogue. Alongside the narrative of the journey, Belloc wanders into topics as varied as the art of writing, life in the military, religion, the middle class, literary criticism, music, poetry, and much more.&lt;/p&gt;
 			&lt;p&gt;He walked “two and a half hundred leagues” to Rome, over twenty-two days, and arrived in time to hear Mass on the Feast of Saints Peter and Paul. As he goes, he quickly discovers the difficulty of keeping every vow he made before he started, as the days are long, the mountains steep, and his financial situation stressed. His relatively unique politics and personality comes through in his many stories and asides.&lt;/p&gt;
-			&lt;p&gt;&lt;i&gt;The Path to Rome&lt;/i&gt; sold very well and many critics have viewed it as the book that made Belloc’s name. His great friend &lt;a href=&quot;https://standardebooks.org/ebooks/g-k-chesterton&quot;&gt;G.K. Chesterton&lt;/a&gt; reviewed it in &lt;i&gt;The World&lt;/i&gt;: “The Path to Rome is the product of the actual and genuine buoyancy and thoughtlessness of a rich intellect….” Belloc wrote a Ballade and inscribed it in his own copy of the book, dated on the Feast of the Epiphany, in the year 1908:&lt;/p&gt;
+			&lt;p&gt;&lt;i&gt;The Path to Rome&lt;/i&gt; sold very well and many critics have viewed it as the book that made Belloc’s name. His great friend &lt;a href="https://standardebooks.org/ebooks/g-k-chesterton"&gt;G.K. Chesterton&lt;/a&gt; reviewed it in &lt;i&gt;The World&lt;/i&gt;: “The Path to Rome is the product of the actual and genuine buoyancy and thoughtlessness of a rich intellect….” Belloc wrote a Ballade and inscribed it in his own copy of the book, dated on the Feast of the Epiphany, in the year 1908:&lt;/p&gt;
 			&lt;blockquote&gt;
 				&lt;span&gt;Alas! I never shall so write again!&lt;/span&gt;
 				&lt;br/&gt;
-				&lt;span&gt;&lt;em&gt;Envoi&lt;/em&gt;&lt;/span&gt;
+				&lt;span&gt;
+					&lt;em&gt;Envoi&lt;/em&gt;
+				&lt;/span&gt;
 				&lt;br/&gt;
 				&lt;span&gt;Prince, bow yourself to God and bow to Time,&lt;/span&gt;
 				&lt;br/&gt;
