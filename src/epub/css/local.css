@@ -298,12 +298,17 @@ section#the-path-to-rome section#in-all-these-circumstances div:nth-of-type(3) l
 }
 /* end indentation within final bracketed list */
 
-section#story-of-mr-hard ul{
+section#the-path-to-rome section#story-of-mr-hard ul{
 	list-style: none;
 	list-style-type: none;
 }
 
-section#loud-and-final-song blockquote p:nth-of-type(4){
+section#the-path-to-rome section#story-of-mr-hard ul li{
+	padding-left: 2em;
+	text-indent: -2em;
+}
+
+section#the-path-to-rome section#loud-and-final-song blockquote p:nth-of-type(4){
 	padding-left: 2em;
 }
 
