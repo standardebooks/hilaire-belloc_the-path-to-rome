@@ -169,8 +169,9 @@ p.lector-auctor-dialogue{
 }
 
 p.lector-auctor-dialogue b[epub|type~="z3998:persona"]{
-	font-variant: small-caps;
-	margin-right: 0.5em;
+	display: inline-block;
+	width: 5em;
+	font-variant: small-caps;	
 }
 /* End customized dramatic dialogue */
 
@@ -359,6 +360,12 @@ figure#illustration-76{
 	max-width: 40em;
 }
 
+figure#illustration-48 img,
+figure#illustration-49 img,
+figure#illustration-79 img{
+	max-width: 35em;
+}
+
 figure#illustration-4,
 figure#illustration-26,
 figure#illustration-29,
@@ -385,7 +392,7 @@ figure#illustration-27,
 figure#illustration-32,
 figure#illustration-33,
 figure#illustration-35,
-figure#illustration-36,
+figure#illustration-37,
 figure#illustration-38,
 figure#illustration-41,
 figure#illustration-43,
@@ -405,6 +412,10 @@ figure#illustration-78{
 	max-width: 20em;
 }
 
+figure#illustration-36{
+	max-width: 15em;
+}
+
 figure#illustration-24,
 figure#illustration-42,
 figure#illustration-59,
@@ -412,11 +423,6 @@ figure#illustration-64{
 	max-width: 10em;
 }
 /* End figure widths */
-
-/* specify image heights for tall images */
-figure img{
-	max-height: 95vh;
-}
 
 figure#illustration-4 img,
 figure#illustration-19 img,
@@ -428,24 +434,15 @@ figure#illustration-37 img{
 	min-height: 30em;
 }
 
-figure#illustration-24 img{
-	max-height: 30em;
+/* Float images alternating to the left and right on larger screens, based on text size and appropriate image resolution */
+@media(min-width: 80em){
+	figure#illustration-74{
+		clear: left;
+		float: left;
+		margin-right: 1em;
+	}
 }
 
-figure#illustration-36 img,
-figure#illustration-37 img,
-figure#illustration-45 img{
-	max-height: 40em;
-}
-
-/* Music */
-figure#illustration-48 img,
-figure#illustration-49 img,
-figure#illustration-79 img{
-	max-width: 35em;
-}
-
-/* Float some images alternating to the left and right on larger screens, based on text size and appropriate image resolution */
 @media(min-width: 60em){
 	figure#illustration-4,
 	figure#illustration-6,
@@ -510,7 +507,8 @@ figure#illustration-79 img{
 	figure#illustration-59,
 	figure#illustration-66,
 	figure#illustration-71,
-	figure#illustration-77{
+	figure#illustration-75
+	{
 		float: right;
 		margin-left: 1em;
 	}
@@ -528,7 +526,7 @@ figure#illustration-79 img{
 	figure#illustration-58,
 	figure#illustration-64,
 	figure#illustration-72,
-	figure#illustration-75{
+	figure#illustration-77{
 		clear: left;
 		float: left;
 		margin-right: 1em;
@@ -541,12 +539,4 @@ figure#illustration-79 img{
 		float: right;
 		margin-right: 1em;
 	}
-}
-
-/* figures that clear floats above them */
-figure#illustration-23,
-figure#illustration-31,
-figure#illustration-48,
-figure#illustration-74{
-	clear: both;
 }
