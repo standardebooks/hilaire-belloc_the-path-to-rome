@@ -64,9 +64,10 @@
 		</meta>
 		<dc:language>en-GB</dc:language>
 		<dc:source>https://www.gutenberg.org/ebooks/7373</dc:source>
+		<dc:source>https://archive.org/details/pathtorome00belliala</dc:source>
 		<dc:source>https://archive.org/details/pathtorome00bell/</dc:source>
 		<dc:source>https://archive.org/details/pathtorome01bell/</dc:source>
-		<meta property="se:production-notes">Illustrations were pulled from both of the Internet Archive sources (trying to choose the best of each) and restored using GIMP.</meta>
+		<meta property="se:production-notes">Illustrations were pulled from both of all three Internet Archive sources (trying to choose the best of each) and restored using GIMP.</meta>
 		<meta property="se:word-count">WORD_COUNT</meta>
 		<meta property="se:reading-ease.flesch">READING_EASE</meta>
 		<meta property="se:url.vcs.github">https://github.com/standardebooks/hilaire-belloc_the-path-to-rome</meta>
@@ -152,9 +153,9 @@
 		<item href="images/illustration-45.jpg" id="illustration-45.jpg" media-type="image/jpeg"/>
 		<item href="images/illustration-46.jpg" id="illustration-46.jpg" media-type="image/jpeg"/>
 		<item href="images/illustration-47.jpg" id="illustration-47.jpg" media-type="image/jpeg"/>
-		<item href="images/illustration-48.svg" id="illustration-48.svg" media-type="image/svg+xml"/>
+		<item href="images/illustration-48.jpg" id="illustration-48.jpg" media-type="image/jpeg"/>
 		<item href="images/illustration-49.svg" id="illustration-49.svg" media-type="image/svg+xml"/>
-		<item href="images/illustration-50.jpg" id="illustration-50.jpg" media-type="image/jpeg"/>
+		<item href="images/illustration-50.svg" id="illustration-50.svg" media-type="image/svg+xml"/>
 		<item href="images/illustration-51.jpg" id="illustration-51.jpg" media-type="image/jpeg"/>
 		<item href="images/illustration-52.jpg" id="illustration-52.jpg" media-type="image/jpeg"/>
 		<item href="images/illustration-53.jpg" id="illustration-53.jpg" media-type="image/jpeg"/>
@@ -183,8 +184,9 @@
 		<item href="images/illustration-76.jpg" id="illustration-76.jpg" media-type="image/jpeg"/>
 		<item href="images/illustration-77.jpg" id="illustration-77.jpg" media-type="image/jpeg"/>
 		<item href="images/illustration-78.jpg" id="illustration-78.jpg" media-type="image/jpeg"/>
-		<item href="images/illustration-79.svg" id="illustration-79.svg" media-type="image/svg+xml"/>
-		<item href="images/illustration-80.jpg" id="illustration-80.jpg" media-type="image/jpeg"/>
+		<item href="images/illustration-79.jpg" id="illustration-79.jpg" media-type="image/jpeg"/>
+		<item href="images/illustration-80.svg" id="illustration-80.svg" media-type="image/svg+xml"/>
+		<item href="images/illustration-81.jpg" id="illustration-81.jpg" media-type="image/jpeg"/>
 		<item href="images/logo.svg" id="logo.svg" media-type="image/svg+xml"/>
 		<item href="images/plays-without-words-crossed-swords.svg" id="plays-without-words-crossed-swords.svg" media-type="image/svg+xml"/>
 		<item href="images/plays-without-words-duchess-finger.jpg" id="plays-without-words-duchess-finger.jpg" media-type="image/jpeg"/>
@@ -199,6 +201,8 @@
 		<item href="text/halftitlepage.xhtml" id="halftitlepage.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/imprint.xhtml" id="imprint.xhtml" media-type="application/xhtml+xml" properties="svg"/>
 		<item href="text/preface.xhtml" id="preface.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/test.css" id="test.css" media-type="text/css"/>
+		<item href="text/test.xhtml" id="test.xhtml" media-type="application/xhtml+xml" properties="svg"/>
 		<item href="text/the-path-to-rome.xhtml" id="the-path-to-rome.xhtml" media-type="application/xhtml+xml" properties="svg"/>
 		<item href="text/titlepage.xhtml" id="titlepage.xhtml" media-type="application/xhtml+xml" properties="svg"/>
 		<item href="text/uncopyright.xhtml" id="uncopyright.xhtml" media-type="application/xhtml+xml"/>
