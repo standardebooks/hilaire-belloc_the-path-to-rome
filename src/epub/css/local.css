@@ -197,8 +197,7 @@ figcaption{
 /* Shoulder Notes (taken from the headers above each printed page, that section the text) */
 section#the-path-to-rome section > header p{
 	font-variant: small-caps;
-	margin-right: 2em;
-	margin-top: 1em;
+	margin-top: .5em;
 	padding-bottom: 0;
 	text-align: right;
 	white-space: nowrap;
@@ -266,7 +265,7 @@ div.bracketed-list-with-label > span{
 	}
 
 	div.bracketed-list-with-label > ul::after{
-		background-image: url("/../images/curly-bracket.svg");
+		background-image: url("../images/curly-bracket.svg");
 		background-size: 100% 100%;
 		content: " ";
 		height: 100%;
