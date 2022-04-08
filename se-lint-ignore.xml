@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<se-lint-ignore>
+	<file path="the-path-to-rome.xhtml">
+		<ignore>
+			<code>t-043</code>
+			<reason>Matched text are not dialog tags.</reason>
+		</ignore>
+	</file>
+</se-lint-ignore>
