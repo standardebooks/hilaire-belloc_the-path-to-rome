@@ -373,6 +373,17 @@ section#the-path-to-rome section#loud-and-final-song blockquote p:nth-of-type(4)
 }
 
 /* Figure Overrides */
+/* Epigraph image */
+@supports(display: flex){
+	section[epub|type~="epigraph"]{
+		max-height: calc(98vh - 3em);
+	}
+}
+
+figure img{
+	max-height: 80vh;
+}
+
 /* Center specific figure captions */
 figure#illustration-49 figcaption p,
 figure#illustration-50 figcaption p{
@@ -435,6 +446,7 @@ figure#illustration-80 img{
 	max-width: 35em;
 }
 
+figure#illustration-1,
 figure#illustration-5,
 figure#illustration-27,
 figure#illustration-30,
