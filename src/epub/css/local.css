@@ -374,13 +374,13 @@ section#the-path-to-rome section#loud-and-final-song blockquote p:nth-of-type(4)
 
 /* Figure Overrides */
 /* Center specific figure captions */
-figure#illustration-48 figcaption p,
-figure#illustration-49 figcaption p{
+figure#illustration-49 figcaption p,
+figure#illustration-50 figcaption p{
 	text-align: center;
 }
 
 /* Custom style for final caption */
-figure#illustration-80 figcaption{
+figure#illustration-81 figcaption{
 	font-size: 1.25em;
 	font-style: normal;
 	font-variant: all-small-caps;
@@ -389,138 +389,138 @@ figure#illustration-80 figcaption{
 
 /* Reasonable image sizes for larger screens based on image size and text resolution (roughly ~16 px : 1em at 'normal' sizes in browsers) */
 /* Figure widths */
-figure#illustration-31,
-figure#illustration-44,
-figure#illustration-57,
-figure#illustration-61,
-figure#illustration-67,
-figure#illustration-69,
-figure#illustration-70{
+figure#illustration-32,
+figure#illustration-45,
+figure#illustration-58,
+figure#illustration-62,
+figure#illustration-68,
+figure#illustration-70,
+figure#illustration-71{
 	max-width: 50em;
 }
 
-figure#illustration-1,
 figure#illustration-2,
 figure#illustration-3,
-figure#illustration-5,
+figure#illustration-4,
 figure#illustration-6,
 figure#illustration-7,
-figure#illustration-9,
+figure#illustration-8,
 figure#illustration-10,
 figure#illustration-11,
 figure#illustration-12,
-figure#illustration-15,
+figure#illustration-13,
 figure#illustration-16,
 figure#illustration-17,
 figure#illustration-18,
-figure#illustration-20,
+figure#illustration-19,
 figure#illustration-21,
 figure#illustration-22,
-figure#illustration-25,
-figure#illustration-28,
-figure#illustration-30,
-figure#illustration-34,
-figure#illustration-37,
-figure#illustration-39,
+figure#illustration-23,
+figure#illustration-26,
+figure#illustration-29,
+figure#illustration-31,
+figure#illustration-35,
+figure#illustration-38,
 figure#illustration-40,
-figure#illustration-63,
-figure#illustration-68,
-figure#illustration-76{
+figure#illustration-41,
+figure#illustration-64,
+figure#illustration-69,
+figure#illustration-77{
 	max-width: 40em;
 }
 
-figure#illustration-48 img,
 figure#illustration-49 img,
-figure#illustration-79 img{
+figure#illustration-50 img,
+figure#illustration-80 img{
 	max-width: 35em;
 }
 
-figure#illustration-4,
-figure#illustration-26,
-figure#illustration-29,
-figure#illustration-45,
-figure#illustration-53,
-figure#illustration-55,
-figure#illustration-60,
-figure#illustration-62,
-figure#illustration-73,
+figure#illustration-5,
+figure#illustration-27,
+figure#illustration-30,
+figure#illustration-46,
+figure#illustration-54,
+figure#illustration-56,
+figure#illustration-61,
+figure#illustration-63,
 figure#illustration-74,
-figure#illustration-75{
+figure#illustration-75,
+figure#illustration-76{
 	max-width: 30em;
 }
 
-figure#illustration-8,
-figure#illustration-13,
+figure#illustration-9,
 figure#illustration-14,
-figure#illustration-19,
-figure#illustration-23,
-figure#illustration-21,
-figure#illustration-27,
-figure#illustration-32,
+figure#illustration-15,
+figure#illustration-20,
+figure#illustration-24,
+figure#illustration-22,
+figure#illustration-28,
 figure#illustration-33,
-figure#illustration-35,
-figure#illustration-37,
+figure#illustration-34,
+figure#illustration-36,
 figure#illustration-38,
-figure#illustration-41,
-figure#illustration-43,
-figure#illustration-46,
+figure#illustration-39,
+figure#illustration-42,
+figure#illustration-44,
 figure#illustration-47,
-figure#illustration-50,
+figure#illustration-48,
 figure#illustration-51,
 figure#illustration-52,
-figure#illustration-54,
-figure#illustration-56,
-figure#illustration-58,
-figure#illustration-65,
+figure#illustration-53,
+figure#illustration-55,
+figure#illustration-57,
+figure#illustration-59,
 figure#illustration-66,
-figure#illustration-71,
+figure#illustration-67,
 figure#illustration-72,
-figure#illustration-77,
+figure#illustration-73,
 figure#illustration-78,
-figure#illustration-80{
+figure#illustration-79,
+figure#illustration-81{
 	max-width: 20em;
 }
 
-figure#illustration-36{
+figure#illustration-37{
 	max-width: 15em;
 }
 
-figure#illustration-24,
-figure#illustration-42,
-figure#illustration-59,
-figure#illustration-64{
+figure#illustration-25,
+figure#illustration-43,
+figure#illustration-60,
+figure#illustration-65{
 	max-width: 10em;
 }
 
 @media(min-width: 60em){
-	figure#illustration-4,
-	figure#illustration-6,
-	figure#illustration-10,
-	figure#illustration-15,
-	figure#illustration-18,
-	figure#illustration-20,
-	figure#illustration-22,
-	figure#illustration-24,
-	figure#illustration-34,
-	figure#illustration-51,
-	figure#illustration-55,
-	figure#illustration-60{
+	figure#illustration-5,
+	figure#illustration-7,
+	figure#illustration-11,
+	figure#illustration-16,
+	figure#illustration-19,
+	figure#illustration-21,
+	figure#illustration-23,
+	figure#illustration-25,
+	figure#illustration-35,
+	figure#illustration-52,
+	figure#illustration-56,
+	figure#illustration-61{
 		clear: right;
 		float: right;
 		margin-left: 1em;
 	}
 
-	figure#illustration-5,
-	figure#illustration-7,
-	figure#illustration-9,
-	figure#illustration-11,
-	figure#illustration-17,
-	figure#illustration-26,
-	figure#illustration-28,
-	figure#illustration-30,
-	figure#illustration-37,
-	figure#illustration-53,
-	figure#illustration-68{
+	figure#illustration-6,
+	figure#illustration-8,
+	figure#illustration-10,
+	figure#illustration-12,
+	figure#illustration-18,
+	figure#illustration-27,
+	figure#illustration-29,
+	figure#illustration-31,
+	figure#illustration-38,
+	figure#illustration-54,
+	figure#illustration-69{
 		clear: left;
 		float: left;
 		margin-right: 1em;
@@ -528,16 +528,16 @@ figure#illustration-64{
 }
 
 @media(min-width: 50em){
-	figure#illustration-29,
-	figure#illustration-51,
-	figure#illustration-73{
+	figure#illustration-30,
+	figure#illustration-52,
+	figure#illustration-74{
 		clear: right;
 		float: right;
 		margin-left: 1em;
 	}
 
-	figure#illustration-52,
-	figure#illustration-62{
+	figure#illustration-53,
+	figure#illustration-63{
 		clear: left;
 		float: left;
 		margin-right: 1em;
@@ -545,12 +545,12 @@ figure#illustration-64{
 }
 
 @media(min-width: 45em){
-	figure#illustration-66{
+	figure#illustration-67{
 		float: right;
 		margin-left: 1em;
 	}
 
-	figure#illustration-65{
+	figure#illustration-66{
 		clear: left;
 		float: left;
 		margin-right: 1em;
@@ -558,35 +558,35 @@ figure#illustration-64{
 }
 
 @media(min-width: 40em){
-	figure#illustration-8,
-	figure#illustration-13,
-	figure#illustration-27,
-	figure#illustration-32,
-	figure#illustration-36,
-	figure#illustration-38,
-	figure#illustration-47,
-	figure#illustration-58,
-	figure#illustration-64,
-	figure#illustration-71,
-	figure#illustration-75{
+	figure#illustration-9,
+	figure#illustration-14,
+	figure#illustration-28,
+	figure#illustration-33,
+	figure#illustration-37,
+	figure#illustration-39,
+	figure#illustration-48,
+	figure#illustration-59,
+	figure#illustration-65,
+	figure#illustration-72,
+	figure#illustration-76{
 		float: right;
 		margin-left: 1em;
 	}
 
-	figure#illustration-14,
-	figure#illustration-19,
-	figure#illustration-21,
-	figure#illustration-23,
-	figure#illustration-33,
-	figure#illustration-35,
-	figure#illustration-43,
-	figure#illustration-46,
-	figure#illustration-50,
-	figure#illustration-54,
-	figure#illustration-56,
-	figure#illustration-59,
-	figure#illustration-72,
-	figure#illustration-77{
+	figure#illustration-15,
+	figure#illustration-20,
+	figure#illustration-22,
+	figure#illustration-24,
+	figure#illustration-34,
+	figure#illustration-36,
+	figure#illustration-44,
+	figure#illustration-47,
+	figure#illustration-51,
+	figure#illustration-55,
+	figure#illustration-57,
+	figure#illustration-60,
+	figure#illustration-73,
+	figure#illustration-78{
 		clear: left;
 		float: left;
 		margin-right: 1em;
@@ -594,7 +594,7 @@ figure#illustration-64{
 }
 
 @media(min-width: 10em){
-	figure#illustration-24{
+	figure#illustration-25{
 		clear: right;
 		float: right;
 		margin-right: 1em;
