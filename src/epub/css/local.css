@@ -248,7 +248,9 @@ div.bracketed-list-with-label > span{
 /* Must support flexbox and transform */
 @supports((display: inline-flex) and (display: flex) and (transform: rotate(90deg))){
 	div.bracketed-list-with-label{
+		break-inside: avoid;
 		display: inline-flex;
+		page-break-inside: avoid;
 	}
 
 	div.bracketed-list-with-label > ul{
@@ -265,12 +267,12 @@ div.bracketed-list-with-label > span{
 		top: 0;
 		width: 1em;
 	}
+
 	@media all and (prefers-color-scheme: dark){
 		div.bracketed-list-with-label > ul::after{
 			filter: invert(100%);
 		}
 	}
-
 
 	div.bracketed-list-with-label > span{
 		align-items: center;
