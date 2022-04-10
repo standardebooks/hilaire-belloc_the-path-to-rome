@@ -265,6 +265,12 @@ div.bracketed-list-with-label > span{
 		top: 0;
 		width: 1em;
 	}
+	@media all and (prefers-color-scheme: dark){
+		div.bracketed-list-with-label > ul::after{
+			filter: invert(100%);
+		}
+	}
+
 
 	div.bracketed-list-with-label > span{
 		align-items: center;
