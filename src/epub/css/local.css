@@ -463,7 +463,6 @@ figure#illustration-76{
 figure#illustration-9,
 figure#illustration-14,
 figure#illustration-15,
-figure#illustration-20,
 figure#illustration-24,
 figure#illustration-22,
 figure#illustration-28,
@@ -492,7 +491,8 @@ figure#illustration-81{
 	max-width: 20em;
 }
 
-figure#illustration-37{
+figure#illustration-37,
+figure#illustration-20{
 	max-width: 15em;
 }
 
@@ -614,7 +614,7 @@ figure#illustration-65{
 /* Clear floats for the sections when floated images are too close together, so that text doesn't get 'squeezed' */
 @media(max-width: 50em){
 	/* Praise of Windows */
-	section#the-path-to-rome aside:nth-of-type(121) {
+	section#the-path-to-rome aside:nth-of-type(121){
 		clear: left;
 	}
 }
