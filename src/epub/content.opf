@@ -43,7 +43,7 @@
 		<meta property="se:subject">Travel</meta>
 		<dc:description id="description">Hilaire Belloc walks on a pilgrimage to Rome from Toul in Lorraine, France, sketching and writing of the journey as well as engaging in numerous reflections on varied subjects.</dc:description>
 		<meta id="long-description" property="se:long-description" refines="#description">
-			&lt;p&gt;British-French writer and historian &lt;a href="https://standardebooks.org/ebooks/hilaire-belloc"&gt;Hilaire Belloc&lt;/a&gt;’s first travelogue, which describes the pilgrimage he makes to Rome as the result of a vow he made while visiting his hometown of Toul, in Lorraine, France. &lt;i&gt;The Path to Rome&lt;/i&gt; is far more than a simple travelogue. Alongside the narrative of the journey, Belloc wanders into topics as varied as the art of writing, life in the military, religion, the middle class, literary criticism, music, poetry, and much more.&lt;/p&gt;
+			&lt;p&gt;British-French writer and historian &lt;a href="https://standardebooks.org/ebooks/hilaire-belloc"&gt;Hilaire Belloc&lt;/a&gt;’s first travelogue, which describes the pilgrimage he makes to Rome as the result of a vow he made while visiting his hometown of Toul, in Lorraine, France. In his own copy of the book, dated 29 May 1904, he noted: “I wrote this book for the glory of God.” &lt;i&gt;The Path to Rome&lt;/i&gt; is far more than a simple travelogue. Alongside the narrative of the journey, Belloc wanders into topics as varied as the art of writing, life in the military, his Catholic faith, the middle class, literary criticism, music, poetry, and many more.&lt;/p&gt;
 			&lt;p&gt;He walked “two and a half hundred leagues” to Rome, over twenty-two days, and arrived in time to hear Mass on the Feast of Saints Peter and Paul. As he goes, he quickly discovers the difficulty of keeping every vow he made before he started, as the days are long, the mountains steep, and his financial situation stressed. His relatively unique politics and personality comes through in his many stories and asides.&lt;/p&gt;
 			&lt;p&gt;&lt;i&gt;The Path to Rome&lt;/i&gt; sold very well and many critics have viewed it as the book that made Belloc’s name. His great friend &lt;a href="https://standardebooks.org/ebooks/g-k-chesterton"&gt;G.K. Chesterton&lt;/a&gt; reviewed it in &lt;i&gt;The World&lt;/i&gt;: “The Path to Rome is the product of the actual and genuine buoyancy and thoughtlessness of a rich intellect. …” Belloc wrote a Ballade and inscribed it in his own copy of the book, dated on the Feast of the Epiphany, in the year 1908:&lt;/p&gt;
 			&lt;blockquote&gt;
@@ -78,6 +78,7 @@
 		<meta property="se:url.authority.nacoaf" refines="#author">http://id.loc.gov/authorities/names/n80046751</meta>
 		<meta property="role" refines="#author" scheme="marc:relators">wpr</meta>
 		<meta property="se:role" refines="#author" scheme="marc:relators">aut</meta>
+		<meta property="se:role" refines="#author" scheme="marc:relators">ill</meta>
 		<dc:contributor id="artist">Richard Wilson</dc:contributor>
 		<meta property="file-as" refines="#artist">Wilson, Richard</meta>
 		<meta property="se:url.encyclopedia.wikipedia" refines="#artist">https://en.wikipedia.org/wiki/Richard_Wilson_(painter)</meta>
@@ -99,6 +100,7 @@
 		<meta property="se:role" refines="#producer-1" scheme="marc:relators">pfr</meta>
 		<meta property="se:role" refines="#producer-1" scheme="marc:relators">tyg</meta>
 		<meta property="se:role" refines="#producer-1" scheme="marc:relators">ann</meta>
+		<meta property="se:role" refines="#producer-1" scheme="marc:relators">wat</meta>
 	</metadata>
 	<manifest>
 		<item href="css/core.css" id="core.css" media-type="text/css"/>
@@ -189,7 +191,7 @@
 		<item href="images/illustration-81.jpg" id="illustration-81.jpg" media-type="image/jpeg"/>
 		<item href="images/logo.svg" id="logo.svg" media-type="image/svg+xml"/>
 		<item href="images/plays-without-words-crossed-swords.svg" id="plays-without-words-crossed-swords.svg" media-type="image/svg+xml"/>
-		<item href="images/plays-without-words-duchess-finger.jpg" id="plays-without-words-duchess-finger.jpg" media-type="image/jpeg"/>
+		<item href="images/plays-without-words-duchess-finger.svg" id="plays-without-words-duchess-finger.svg" media-type="image/svg+xml"/>
 		<item href="images/plays-without-words-musical-notes.svg" id="plays-without-words-musical-notes.svg" media-type="image/svg+xml"/>
 		<item href="images/plays-without-words-rectangles.svg" id="plays-without-words-rectangles.svg" media-type="image/svg+xml"/>
 		<item href="images/plays-without-words-sine-wave.svg" id="plays-without-words-sine-wave.svg" media-type="image/svg+xml"/>
@@ -200,6 +202,7 @@
 		<item href="text/epigraph.xhtml" id="epigraph.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/halftitlepage.xhtml" id="halftitlepage.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/imprint.xhtml" id="imprint.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/loi.xhtml" id="loi.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/preface.xhtml" id="preface.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/the-path-to-rome.xhtml" id="the-path-to-rome.xhtml" media-type="application/xhtml+xml" properties="svg"/>
 		<item href="text/titlepage.xhtml" id="titlepage.xhtml" media-type="application/xhtml+xml" properties="svg"/>
@@ -214,6 +217,7 @@
 		<itemref idref="preface.xhtml"/>
 		<itemref idref="halftitlepage.xhtml"/>
 		<itemref idref="the-path-to-rome.xhtml"/>
+		<itemref idref="loi.xhtml"/>
 		<itemref idref="endnotes.xhtml"/>
 		<itemref idref="colophon.xhtml"/>
 		<itemref idref="uncopyright.xhtml"/>
