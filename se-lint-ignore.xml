@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <se-lint-ignore>
+	<file path="local.css">
+		<ignore>
+			<code>c-025</code>
+			<reason>Custom bracket div class requires a height to be set as 100% on background-image.</reason>
+		</ignore>
+	</file>
 	<file path="the-path-to-rome.xhtml">
+		<ignore>
+			<code>t-041</code>
+			<reason>Punctuation is used with spaces for a 'play without words'</reason>
+		</ignore>
 		<ignore>
 			<code>t-043</code>
 			<reason>Matched text are not dialog tags.</reason>
