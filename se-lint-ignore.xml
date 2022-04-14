@@ -8,12 +8,24 @@
 	</file>
 	<file path="the-path-to-rome.xhtml">
 		<ignore>
+			<code>t-036</code>
+			<reason>Two instances. First instance is of a quotation mark that crosses element boundaries due to the div tags for the brackets. Second instance is because of a block quotation of dramatic markup.</reason>
+		</ignore>
+		<ignore>
 			<code>t-041</code>
 			<reason>Punctuation is used with spaces for a 'play without words'</reason>
 		</ignore>
 		<ignore>
+			<code>t-042</code>
+			<reason>Two instances. First instance is of a quotation mark that crosses element boundaries due to the div tags for the brackets. Second instance is because of a block quotation of dramatic markup.</reason>
+		</ignore>
+		<ignore>
 			<code>t-043</code>
 			<reason>Matched text are not dialog tags.</reason>
+		</ignore>
+		<ignore>
+			<code>t-064</code>
+			<reason>Title has a last name with a capitalized letter in the middle of it</reason>
 		</ignore>
 	</file>
 </se-lint-ignore>
