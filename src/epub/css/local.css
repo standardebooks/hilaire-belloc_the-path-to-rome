@@ -2,6 +2,7 @@
 @namespace epub "http://www.idpf.org/2007/ops";
 @namespace xml "http://www.w3.org/XML/1998/namespace";
 
+/* All dedications */
 section[epub|type~="dedication"]{
 	text-align: center;
 }
@@ -28,13 +29,18 @@ section[epub|type~="dedication"] > *{
 		margin: 0;
 	}
 }
+/* End all dedications */
 
+/* All epigraphs */
+/* Removed unused selectors */
 [epub|type~="epigraph"]{
 	font-style: italic;
 	hyphens: none;
 	-epub-hyphens: none;
 }
+/* End all epigraphs */
 
+/* Full-page epigraphs */
 section[epub|type~="epigraph"]{
 	text-align: center;
 }
@@ -61,7 +67,12 @@ section[epub|type~="epigraph"] > *{
 	section[epub|type~="epigraph"] > *{
 		margin: 0;
 	}
+
+	section[epub|type~="epigraph"] > * + *{
+		margin-top: 3em;
+	}
 }
+/* End full-page epigraphs */
 
 /* block level italic xml lang */
 blockquote[xml|lang]{
@@ -373,12 +384,6 @@ section#the-path-to-rome blockquote:nth-of-type(20) p:nth-of-type(4){
 
 /* Figure Overrides */
 /* Epigraph image */
-@supports(display: flex){
-	section[epub|type~="epigraph"]{
-		max-height: calc(98vh - 3em);
-	}
-}
-
 section[epub|type~="epigraph"] figure img{
 	max-height: 60vh;
 }
