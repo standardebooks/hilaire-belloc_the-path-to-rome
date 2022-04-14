@@ -194,25 +194,16 @@ figcaption{
 /* End Illustrations */
 
 /* Custom Styles (not copied/pasted from the manual) */
-/* Shoulder Notes (taken from the headers above each printed page, that section the text) */
-section#the-path-to-rome section > header p{
+/* Asides (taken from the headers above each printed page, that section the text) */
+section#the-path-to-rome aside{
 	font-variant: small-caps;
-	margin-top: .5em;
-	padding-bottom: 0;
+	margin: .5em 0;
 	text-align: right;
 	white-space: nowrap;
 }
 
-section#the-path-to-rome section header + p{
-	text-indent: 1em;
-}
-
-section#the-path-to-rome section:nth-of-type(1) header + p{
+section#the-path-to-rome p:nth-of-type(1){
 	text-indent: 0;
-}
-
-section#the-path-to-rome section > header + *{
-	margin-top: .5em;
 }
 /* End shoulder notes */
 
@@ -302,13 +293,13 @@ div.bracketed-list-with-label > span{
 }
 /* end bracketed lists */
 
-/* Small typeface for quote */
-section#the-path-to-rome section#the-ridiculous-town-hall span{
+/* Smaller typeface for "Hôtel de ville" */
+#small-text{
 	font-size: .75em;
 }
 
 /* Larger typeface 'H' character indicating the shape of the land */
-section#the-path-to-rome section#more-on-style span{
+#large-H{
 	font-family: sans-serif;
 	font-size: 1.5em;
 	vertical-align: middle;
@@ -316,59 +307,59 @@ section#the-path-to-rome section#more-on-style span{
 
 /* 'plays without words' section */
 /* illustration-plays-without-words-musical-notes */
-section#the-path-to-rome section#plays-without-words table tr:nth-of-type(4) img{
+section#the-path-to-rome table:nth-of-type(1) tr:nth-of-type(4) img{
 	height: 3em;
 	vertical-align: top;
 }
 
 /* illustration-plays-without-words-duchess-finger */
-section#the-path-to-rome section#plays-without-words table tr:nth-of-type(5) img{
+section#the-path-to-rome table:nth-of-type(1) tr:nth-of-type(5) img{
 	height: 1.25em;
 	vertical-align: top;
 }
 
 /* illustration-plays-without-words-sine-wave */
-section#the-path-to-rome section#plays-without-words table tr:nth-of-type(6) img{
+section#the-path-to-rome table:nth-of-type(1) tr:nth-of-type(6) img{
 	height: .75em;
 	vertical-align: middle;
 }
 
 /* illustration-plays-without-words-crossed-swords */
-section#the-path-to-rome section#plays-without-words table tr:nth-of-type(9) img{
+section#the-path-to-rome table:nth-of-type(1) tr:nth-of-type(9) img{
 	height: 1em;
 	vertical-align: top;
 }
 
 /* illustration-plays-without-words-rectangles */
-section#the-path-to-rome section#plays-without-words table tr:nth-of-type(10) img{
+section#the-path-to-rome table:nth-of-type(1) tr:nth-of-type(10) img{
 	height: 1em;
 	vertical-align: middle;
 }
 /* end 'plays without words' section */
 
 /* indentation within final list for 'these circumstances' */
-section#the-path-to-rome section#in-all-these-circumstances div:nth-of-type(3) li:nth-of-type(7){
+section#the-path-to-rome div.bracketed-list-with-label:nth-of-type(3) li:nth-of-type(7){
 	padding-left: 4em;
 	text-indent: -1em;
 }
 
-section#the-path-to-rome section#in-all-these-circumstances div:nth-of-type(3) li:nth-of-type(8){
+section#the-path-to-rome div.bracketed-list-with-label:nth-of-type(3) li:nth-of-type(8){
 	padding-left: 2em;
 	text-indent: -1em;
 }
 /* end indentation within final bracketed list */
 
-section#the-path-to-rome section#story-of-mr-hard ul{
+section#the-path-to-rome > ul{
 	list-style: none;
 	list-style-type: none;
 }
 
-section#the-path-to-rome section#story-of-mr-hard ul li{
+section#the-path-to-rome > ul li{
 	padding-left: 2em;
 	text-indent: -2em;
 }
 
-section#the-path-to-rome section#loud-and-final-song blockquote p:nth-of-type(4){
+section#the-path-to-rome blockquote:nth-of-type(20) p:nth-of-type(4){
 	padding-left: 2em;
 }
 
@@ -380,7 +371,7 @@ section#the-path-to-rome section#loud-and-final-song blockquote p:nth-of-type(4)
 	}
 }
 
-figure img{
+section[epub|type~="epigraph"] figure img{
 	max-height: 80vh;
 }
 
@@ -505,7 +496,6 @@ figure#illustration-65{
 }
 
 @media(min-width: 60em){
-	figure#illustration-5,
 	figure#illustration-7,
 	figure#illustration-11,
 	figure#illustration-16,
@@ -615,31 +605,25 @@ figure#illustration-65{
 
 /* Clear floats for the sections when floated images are too close together, so that text doesn't get 'squeezed' */
 @media(max-width: 50em){
-	section#praise-of-windows{
+	aside#praise-of-windows{
 		clear: left;
 	}
 }
 
 @media(max-width: 55em){
-	section#the-special-chapels{
+	aside#the-special-chapels{
 		clear: right;
 	}
 }
 
 @media(max-width: 60em){
-	section#the-crossing-of-the-enza{
+	aside#the-crossing-of-the-enza{
 		clear: both;
 	}
 }
 
 @media(max-width: 80em){
-	section#the-ponds{
-		clear: right;
-	}
-}
-
-@media(max-width: 85em){
-	section#the-view-of-toul{
+	aside#the-ponds{
 		clear: right;
 	}
 }
