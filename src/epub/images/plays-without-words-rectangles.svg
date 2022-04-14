@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 528 40">
-	<title>Four black rectangles, about 3 times long as high, and each very slightly different in size.</title>
+	<title>Four black rectangles, about three times long as high, and each very slightly different in size.</title>
 	<path d="m0 0h112v40h-112z" stroke-width="8"/>
 	<path d="m136 0.8h112v38.4h-112z" stroke-width="8"/>
 	<path d="m272 0h112v40h-112z" stroke-width="8"/>
