@@ -328,33 +328,57 @@ section#the-path-to-rome > p:nth-of-type(374) > span{
 
 /* 'plays without words' section */
 /* illustration-plays-without-words-musical-notes */
+section#the-path-to-rome table:nth-of-type(1) tr:nth-of-type(4) td:nth-of-type(2) {
+	vertical-align: middle;
+}
+
 section#the-path-to-rome table:nth-of-type(1) tr:nth-of-type(4) img{
-	height: 3em;
-	vertical-align: top;
+	width: 15em;
+	max-width: 60vw;
+	vertical-align: middle;
 }
 
 /* illustration-plays-without-words-duchess-finger */
+section#the-path-to-rome table:nth-of-type(1) tr:nth-of-type(5) td:nth-of-type(2) {
+	vertical-align: middle;
+}
+
 section#the-path-to-rome table:nth-of-type(1) tr:nth-of-type(5) img{
-	height: 1.25em;
-	vertical-align: top;
+	width: 3em;
+	vertical-align: bottom;
 }
 
 /* illustration-plays-without-words-sine-wave */
+section#the-path-to-rome table:nth-of-type(1) tr:nth-of-type(6) td:nth-of-type(2) {
+	vertical-align: middle;	
+}
+
 section#the-path-to-rome table:nth-of-type(1) tr:nth-of-type(6) img{
-	height: .75em;
-	vertical-align: middle;
+	width: 15em;
+	max-width: 60vw;	
+}
+
+section#the-path-to-rome table:nth-of-type(1) tr:nth-of-type(9),
+section#the-path-to-rome table:nth-of-type(1) tr:nth-of-type(10){
+	position: relative;
 }
 
 /* illustration-plays-without-words-crossed-swords */
 section#the-path-to-rome table:nth-of-type(1) tr:nth-of-type(9) img{
 	height: 1em;
-	vertical-align: top;
+	position: relative;
+	top: 0.2em;
 }
 
 /* illustration-plays-without-words-rectangles */
-section#the-path-to-rome table:nth-of-type(1) tr:nth-of-type(10) img{
-	height: 1em;
+
+section#the-path-to-rome table:nth-of-type(1) tr:nth-of-type(10) td:nth-of-type(2) {
 	vertical-align: middle;
+}
+
+section#the-path-to-rome table:nth-of-type(1) tr:nth-of-type(10) img{
+	width: 8em;
+	max-width: 75vw;	
 }
 /* end 'plays without words' section */
 
