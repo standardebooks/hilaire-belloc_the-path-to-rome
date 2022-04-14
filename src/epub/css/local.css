@@ -170,8 +170,8 @@ p.lector-auctor-dialogue{
 
 p.lector-auctor-dialogue b[epub|type~="z3998:persona"]{
 	display: inline-block;
+	font-variant: small-caps;
 	width: 5em;
-	font-variant: small-caps;	
 }
 /* End customized dramatic dialogue */
 
@@ -507,8 +507,7 @@ figure#illustration-37 img{
 	figure#illustration-59,
 	figure#illustration-66,
 	figure#illustration-71,
-	figure#illustration-75
-	{
+	figure#illustration-75{
 		float: right;
 		margin-left: 1em;
 	}
