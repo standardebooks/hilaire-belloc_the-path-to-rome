@@ -398,7 +398,7 @@ section#the-path-to-rome > ul{
 	list-style-type: none;
 }
 
-section#the-path-to-rome > ul li{
+section#the-path-to-rome > ul li p{
 	padding-left: 2em;
 	text-indent: -2em;
 }
