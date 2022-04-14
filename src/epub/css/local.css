@@ -217,6 +217,8 @@ section#the-path-to-rome aside{
 	padding: .5em;
 	text-align: initial;
 	text-indent: 0;
+	hyphens: none;
+	-epub-hyphens: none;
 }
 
 @media(max-width: 10em){
