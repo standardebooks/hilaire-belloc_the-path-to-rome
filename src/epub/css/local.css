@@ -291,18 +291,9 @@ div.bracketed-list-with-label > span{
 		width: 1em;
 	}
 
-	/* Customize spacing and size for shorter lists */
+	/* Customize bracket size for shorter lists */
 	div.bracketed-list-with-label:nth-of-type(3) > ul::after{
 		width: .75em;
-	}
-
-	div.bracketed-list-with-label:nth-of-type(4) > ul::after{
-		right: -1em;
-		width: .5em;
-	}
-
-	div.bracketed-list-with-label:nth-of-type(4) > span{
-		margin-left: 1.25em;
 	}
 }
 /* end bracketed lists */
