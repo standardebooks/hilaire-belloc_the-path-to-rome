@@ -241,9 +241,12 @@ p.lector-auctor-dialogue{
 	text-indent: 1em;
 }
 
-p.lector-auctor-dialogue b[epub|type~="z3998:persona"]{
-	display: inline-block;
+b[epub|type~="z3998:persona"]{
 	font-variant: small-caps;
+}
+
+p.lector-auctor-dialogue b[epub|type~="z3998:persona"]:nth-of-type(1){
+	display: inline-block;
 	width: 5em;
 }
 /* End customized dramatic dialogue */
