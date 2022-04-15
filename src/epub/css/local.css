@@ -283,6 +283,7 @@ div.bracketed-list-with-label > span{
 	}
 
 	div.bracketed-list-with-label > ul::after{
+		background-color: #fff !important;
 		background-image: url("../images/curly-bracket.svg");
 		background-size: 100% 100%;
 		content: " ";
@@ -293,8 +294,16 @@ div.bracketed-list-with-label > span{
 		width: 1em;
 	}
 
+	/* if the reader supports color scheme queries, don't apply background color */
+	@media all and (prefers-color-scheme: light){
+		div.bracketed-list-with-label > ul::after{
+			background-color: unset !important;
+		}
+	}
+
 	@media all and (prefers-color-scheme: dark){
 		div.bracketed-list-with-label > ul::after{
+			background-color: unset !important;
 			filter: invert(100%);
 		}
 	}
