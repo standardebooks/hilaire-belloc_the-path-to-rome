@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 528 40">
+<svg xmlns="http://www.w3.org/2000/svg" height="44" version="1.1" width="532" viewBox="0 0 532 44">
 	<title>Four black rectangles, about three times long as high, and each very slightly different in size.</title>
-	<path d="m0 0h112v40h-112z" stroke-width="8"/>
-	<path d="m136 0.8h112v38.4h-112z" stroke-width="8"/>
-	<path d="m272 0h112v40h-112z" stroke-width="8"/>
-	<path d="m408 0h120v40h-120z" stroke-width="8"/>
+	<path d="m2 2h112v40h-112z" stroke-width="8"/>
+	<path d="m138 2.8h112v38.4h-112z" stroke-width="8"/>
+	<path d="m274 2h112v40h-112z" stroke-width="8"/>
+	<path d="m410 2h120v40h-120z" stroke-width="8"/>
 </svg>
