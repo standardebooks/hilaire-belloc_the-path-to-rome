@@ -207,7 +207,7 @@ figcaption{
 /* Custom Styles (not copied/pasted from the SE manual) */
 /* Running Heads/Shoulder Notes (taken from the headers above each printed page, that section the text) */
 section#the-path-to-rome aside{
-	border-left: 1px solid;
+	border: 1px solid;
 	clear: right;
 	float: right;
 	font-size: .75em;
