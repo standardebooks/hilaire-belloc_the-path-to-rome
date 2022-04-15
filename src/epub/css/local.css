@@ -194,18 +194,24 @@ figcaption{
 /* End Illustrations */
 
 /* Custom Styles (not copied/pasted from the manual) */
-/* Asides (taken from the headers above each printed page, that section the text) */
+/* Asides/Shoulder Notes (taken from the headers above each printed page, that section the text) */
 section#the-path-to-rome aside{
+	float: right;
+	font-size: .75em;
 	font-variant: small-caps;
-	margin: .5em 0;
-	text-align: right;
-	white-space: nowrap;
-}
-
-section#the-path-to-rome p:nth-of-type(1){
+	margin: 1em 0 .5em .5em;
+	max-width: 40%;
+	text-align: initial;
 	text-indent: 0;
 }
-/* End shoulder notes */
+
+@media(max-width: 10em){
+	section#the-path-to-rome aside{
+		float: none;
+		max-width: 100%;
+	}
+}
+/* End Asides/Shoulder Notes */
 
 /* Song blockquote headers */
 [epub|type~="z3998:song"] header{
