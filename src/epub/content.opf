@@ -2,8 +2,8 @@
 <package xmlns="http://www.idpf.org/2007/opf" dir="ltr" prefix="se: https://standardebooks.org/vocab/1.0" unique-identifier="uid" version="3.0" xml:lang="en-US">
 	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
 		<dc:identifier id="uid">url:https://standardebooks.org/ebooks/hilaire-belloc/the-path-to-rome</dc:identifier>
-		<dc:date>1900-01-01T00:00:00Z</dc:date>
-		<meta property="dcterms:modified">1900-01-01T00:00:00Z</meta>
+		<dc:date>2022-04-20T22:15:18Z</dc:date>
+		<meta property="dcterms:modified">2022-04-20T22:15:18Z</meta>
 		<dc:rights>The source text and artwork in this ebook are believed to be in the United States public domain; that is, they are believed to be free of copyright restrictions in the United States. They may still be copyrighted in other countries, so users located outside of the United States must check their local laws before using this ebook. The creators of, and contributors to, this ebook dedicate their contributions to the worldwide public domain via the terms in the [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).</dc:rights>
 		<dc:publisher id="publisher">Standard Ebooks</dc:publisher>
 		<meta property="file-as" refines="#publisher">Standard Ebooks</meta>
@@ -42,35 +42,20 @@
 		<meta property="se:subject">Nonfiction</meta>
 		<meta property="se:subject">Spirituality</meta>
 		<meta property="se:subject">Travel</meta>
-		<dc:description id="description">Hilaire Belloc walks on a pilgrimage to Rome from his hometown of Toul, in Lorraine, France, writing of the journey, sketching the sights, as well as digressing in many reflections on a wide variety of subjects.</dc:description>
+		<dc:description id="description">Hilaire Belloc takes a walking pilgrimage to Rome from his hometown in France, writing of the journey, sketching the sights, and digressing on a wide variety of subjects.</dc:description>
 		<meta id="long-description" property="se:long-description" refines="#description">
-			&lt;p&gt;British-French writer and historian &lt;a href="https://standardebooks.org/ebooks/hilaire-belloc"&gt;Hilaire Belloc&lt;/a&gt;’s first travelogue, which describes the pilgrimage he makes to Rome as the result of a vow he made while visiting his hometown of Toul, in Lorraine, France. In his own copy of the book, dated 29 May 1904, he noted: “I wrote this book for the glory of God.” &lt;i&gt;The Path to Rome&lt;/i&gt; is far more than a simple travelogue. Alongside the narrative of the journey, Belloc wanders into topics as varied as the art of writing, life in the military, his Catholic faith, the middle class, literary criticism, music, poetry, and many more.&lt;/p&gt;
-			&lt;p&gt;He walked “two and a half hundred leagues” to Rome, over twenty-two days, and arrived in time to hear Mass on the Feast of Saints Peter and Paul. As he goes, he quickly discovers the difficulty of keeping every vow he made before he started, as the days are long, the mountains steep, and his financial situation stressed. His unique politics and personality comes through in his many stories and asides.&lt;/p&gt;
-			&lt;p&gt;&lt;i&gt;The Path to Rome&lt;/i&gt; sold very well and many critics have viewed it as the book that made Belloc’s name. His great friend &lt;a href="https://standardebooks.org/ebooks/g-k-chesterton"&gt;G.K. Chesterton&lt;/a&gt; reviewed it in &lt;i&gt;The World&lt;/i&gt;: “The Path to Rome is the product of the actual and genuine buoyancy and thoughtlessness of a rich intellect. …” Belloc wrote some verse in his own copy of the book, dated on the Feast of the Epiphany, in the year 1908:&lt;/p&gt;
-			&lt;blockquote&gt;
-				&lt;span&gt;Alas! I never shall so write again!&lt;/span&gt;
-				&lt;br/&gt;
-				&lt;span&gt;
-					&lt;em&gt;Envoi&lt;/em&gt;
-				&lt;/span&gt;
-				&lt;br/&gt;
-				&lt;span&gt;Prince, bow yourself to God and bow to Time,&lt;/span&gt;
-				&lt;br/&gt;
-				&lt;span&gt;Which is God’s servant for the use of men,&lt;/span&gt;
-				&lt;br/&gt;
-				&lt;span&gt;To bend them to his purpose sublime.&lt;/span&gt;
-				&lt;br/&gt;
-				&lt;span&gt;Alas! I never shall so write again.&lt;/span&gt;
-			&lt;/blockquote&gt;
+			&lt;p&gt;&lt;i&gt;The Path to Rome&lt;/i&gt; is British-French writer and historian &lt;a href="https://standardebooks.org/ebooks/hilaire-belloc"&gt;Hilaire Belloc’s&lt;/a&gt; first travelogue. It describes the pilgrimage he took to Rome as the result of a vow he made while visiting his hometown of Toul, in Lorraine, France. In his own copy of the book, dated May 29, 1904, he notes: “I wrote this book for the glory of God.”&lt;/p&gt;
+			&lt;p&gt;Belloc walked “two and a half hundred leagues” to Rome, over twenty-two days, and arrived in time to hear Mass on the Feast of Saints Peter and Paul. As he walks, he quickly discovers the difficulty of keeping every vow he made before starting, as the days are long, the mountains steep, and his finances stressed. But the book is far more than a simple travelogue; alongside the narrative of the journey, Belloc wanders into topics as varied as the art of writing, life in the military, his Catholic faith, the middle class, literary criticism, music, poetry, and more. His unique politics and personality shine in his many digressions and asides.&lt;/p&gt;
+			&lt;p&gt;&lt;i&gt;The Path to Rome&lt;/i&gt; sold very well, and many critics have viewed it as the book that made Belloc’s name. His great friend &lt;a href="https://standardebooks.org/ebooks/g-k-chesterton"&gt;G. K. Chesterton&lt;/a&gt; said of it in &lt;i&gt;The World&lt;/i&gt;: “&lt;i&gt;The Path to Rome&lt;/i&gt; is the product of the actual and genuine buoyancy and thoughtlessness of a rich intellect. …”&lt;/p&gt;
 		</meta>
 		<dc:language>en-GB</dc:language>
 		<dc:source>https://www.gutenberg.org/ebooks/7373</dc:source>
 		<dc:source>https://archive.org/details/pathtorome00belliala</dc:source>
 		<dc:source>https://archive.org/details/pathtorome00bell/</dc:source>
 		<dc:source>https://archive.org/details/pathtorome01bell/</dc:source>
-		<meta property="se:production-notes">Illustrations were pulled from both of all three Internet Archive sources, trying to choose the best of each, and restored using GIMP.</meta>
-		<meta property="se:word-count">WORD_COUNT</meta>
-		<meta property="se:reading-ease.flesch">READING_EASE</meta>
+		<meta property="se:production-notes">Illustrations were pulled from all three Internet Archive sources, trying to choose the best of each, and restored using GIMP. Shoulder notes are in div and not aside because ACE considers asides to be "landmarks" requiring unique titles.</meta>
+		<meta property="se:word-count">98310</meta>
+		<meta property="se:reading-ease.flesch">70.87</meta>
 		<meta property="se:url.vcs.github">https://github.com/standardebooks/hilaire-belloc_the-path-to-rome</meta>
 		<dc:creator id="author">Hilaire Belloc</dc:creator>
 		<meta property="file-as" refines="#author">Belloc, Hilaire</meta>
@@ -102,6 +87,10 @@
 		<meta property="se:role" refines="#producer-1" scheme="marc:relators">tyg</meta>
 		<meta property="se:role" refines="#producer-1" scheme="marc:relators">ann</meta>
 		<meta property="se:role" refines="#producer-1" scheme="marc:relators">wat</meta>
+		<dc:contributor id="producer-2">Alex Cabal</dc:contributor>
+		<meta property="file-as" refines="#producer-2">Cabal, Alex</meta>
+		<meta property="se:url.homepage" refines="#producer-2">https://alexcabal.com</meta>
+		<meta property="role" refines="#producer-2" scheme="marc:relators">pfr</meta>
 	</metadata>
 	<manifest>
 		<item href="css/core.css" id="core.css" media-type="text/css"/>
