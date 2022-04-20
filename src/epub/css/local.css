@@ -210,7 +210,7 @@ figcaption{
 
 /* Custom Styles (not copied/pasted from the SE manual) */
 /* Running Heads/Shoulder Notes (taken from the headers above each printed page, that section the text) */
-section#the-path-to-rome aside{
+section#the-path-to-rome div.aside{
 	border: 1px solid;
 	clear: right;
 	float: right;
@@ -218,15 +218,15 @@ section#the-path-to-rome aside{
 	font-variant: small-caps;
 	hyphens: none;
 	-epub-hyphens: none;
-	margin: 1em 0 .5em .5em;
+	margin: 1em;
 	max-width: 40%;
-	padding: .5em;
+	padding: 1em;
 	text-align: initial;
 	text-indent: 0;
 }
 
 @media(max-width: 10em){
-	section#the-path-to-rome aside{
+	section#the-path-to-rome div.aside{
 		float: none;
 		max-width: 100%;
 	}
@@ -398,12 +398,12 @@ section#the-path-to-rome table:nth-of-type(1) tr:nth-of-type(10) img{
 /* end 'plays without words' section */
 
 /* indentation within final list for 'these circumstances' */
-section#the-path-to-rome div.bracketed-list-with-label:nth-of-type(3) li:nth-of-type(7){
+section#the-path-to-rome div.bracketed-list-with-label:nth-of-type(174) li:nth-of-type(7){
 	padding-left: 4em;
 	text-indent: -1em;
 }
 
-section#the-path-to-rome div.bracketed-list-with-label:nth-of-type(3) li:nth-of-type(8){
+section#the-path-to-rome div.bracketed-list-with-label:nth-of-type(174) li:nth-of-type(8){
 	padding-left: 2em;
 	text-indent: -1em;
 }
