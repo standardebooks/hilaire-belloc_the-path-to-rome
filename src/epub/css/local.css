@@ -548,3 +548,8 @@ figure#illustration-60,
 figure#illustration-65{
 	max-width: 10em;
 }
+
+/* Clear aside float so image doesn't get squeezed */
+figure#illustration-80{
+	clear: right;
+}
