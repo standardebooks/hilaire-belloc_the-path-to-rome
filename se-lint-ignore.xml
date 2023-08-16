@@ -12,8 +12,16 @@
 			<reason>Punctuation is used with spaces for a 'play without words'</reason>
 		</ignore>
 		<ignore>
-			<code>t-042</code>
+			<code>y-019</code>
 			<reason>Two instances. First instance is of a quotation mark that crosses element boundaries due to the div tags for the brackets. Second instance is because of a block quotation of dramatic markup.</reason>
+		</ignore>
+		<ignore>
+			<code>y-021</code>
+			<reason>This is also because of the block quotation of dramatic markup.</reason>
+		</ignore>
+		<ignore>
+			<code>y-031</code>
+			<reason>The matched text is not a typo.</reason>
 		</ignore>
 		<ignore>
 			<code>t-064</code>
