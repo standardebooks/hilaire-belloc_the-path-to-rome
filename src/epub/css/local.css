@@ -241,7 +241,7 @@ section#the-path-to-rome div.aside{
 
 /* Customized dramatic dialogue between an imagined reader ('Lector') and the writer ('Auctor') */
 p.lector-auctor-dialogue{
-	margin-top: 0.5em;
+	margin-top: .5em;
 	text-indent: 1em;
 }
 
@@ -378,7 +378,7 @@ section#the-path-to-rome table:nth-of-type(1) tr:nth-of-type(6) img{
 section#the-path-to-rome table:nth-of-type(1) tr:nth-of-type(9) img{
 	height: 1em;
 	position: relative;
-	top: 0.2em;
+	top: .2em;
 }
 
 /* illustration-plays-without-words-rectangles */
