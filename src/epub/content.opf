@@ -54,7 +54,7 @@
 		<dc:source>https://archive.org/details/pathtorome00bell</dc:source>
 		<dc:source>https://archive.org/details/pathtorome01bell</dc:source>
 		<meta property="se:production-notes">Illustrations were pulled from all three Internet Archive sources, trying to choose the best of each, and restored using GIMP. Shoulder notes are in div and not aside because ACE considers asides to be "landmarks" requiring unique titles.</meta>
-		<meta property="se:word-count">98327</meta>
+		<meta property="se:word-count">98156</meta>
 		<meta property="se:reading-ease.flesch">70.87</meta>
 		<meta property="se:url.vcs.github">https://github.com/standardebooks/hilaire-belloc_the-path-to-rome</meta>
 		<dc:creator id="author">Hilaire Belloc</dc:creator>
