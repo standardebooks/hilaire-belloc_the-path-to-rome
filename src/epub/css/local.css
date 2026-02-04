@@ -180,6 +180,22 @@ table[epub|type~="z3998:drama"]{
 [epub|type~="z3998:persona"]{
 	font-variant: all-small-caps;
 }
+
+@media(max-width: 400px){
+	[epub|type~="z3998:drama"] td,
+	[epub|type~="z3998:drama"] td[epub|type~="z3998:persona"],
+	[epub|type~="z3998:drama"] td:last-child{
+		display: block;
+		padding: 0;
+		text-align: initial;
+		width: 100%;
+	}
+
+	[epub|type~="z3998:drama"] td[epub|type~="z3998:persona"]{
+		break-after: avoid;
+		margin-top: 1.5em;
+	}
+}
 /* End Drama */
 
 /* Era */
@@ -256,8 +272,7 @@ p.lector-auctor-dialogue b[epub|type~="z3998:persona"]:nth-of-type(1){
 }
 /* End customized dramatic dialogue */
 
-/* Bracketed lists, with curly brace and rotated text after curly brace 
-   Falls back to simple list followed by text and no curly brace when flex layout or transforms are unsupported */
+/* Bracketed lists, with curly brace and rotated text after curly brace. Falls back to simple list followed by text and no curly brace when flex layout or transforms are unsupported. */
 div.bracketed-list-with-label{
 	display: inline-block;
 	padding: 1em;
