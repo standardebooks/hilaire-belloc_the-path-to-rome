@@ -2,20 +2,29 @@
 <se-lint-ignore>
 	<file path="local.css">
 		<ignore code="c-025">
+			<line>310</line>
 			<reason>Custom bracket div class requires a height to be set as 100% on background-image.</reason>
 		</ignore>
 	</file>
 	<file path="the-path-to-rome.xhtml">
 		<ignore code="t-041">
+			<line>746</line>
+			<line>754</line>
+			<line>779</line>
+			<line>787</line>
 			<reason>Punctuation is used with spaces for a 'play without words'</reason>
 		</ignore>
 		<ignore code="t-064">
+			<line>2116</line>
 			<reason>Title has a last name with a capitalized letter in the middle of it</reason>
 		</ignore>
 		<ignore code="y-019">
+			<line>1032</line>
+			<line>1308</line>
 			<reason>Two instances. First instance is of a quotation mark that crosses element boundaries due to the div tags for the brackets. Second instance is because of a block quotation of dramatic markup.</reason>
 		</ignore>
 		<ignore code="y-031">
+			<line>818</line>
 			<reason>The matched text is not a typo.</reason>
 		</ignore>
 	</file>
