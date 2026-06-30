@@ -1,0 +1,1 @@
+Illustrations were pulled from all three Internet Archive sources, trying to choose the best of each, and restored using GIMP. Shoulder notes are in div and not aside because ACE considers asides to be "landmarks" requiring unique titles.
