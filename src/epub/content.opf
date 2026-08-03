@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://www.idpf.org/2007/opf" dir="ltr" prefix="se: https://standardebooks.org/vocab/1.0 rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#" unique-identifier="uid" version="3.0" xml:lang="en-US">
+<package xmlns="http://www.idpf.org/2007/opf" dir="ltr" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#" unique-identifier="uid" version="3.0" xml:lang="en-US">
 	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
 		<dc:identifier id="uid">https://standardebooks.org/ebooks/hilaire-belloc/the-path-to-rome</dc:identifier>
 		<dc:date>2022-04-20T22:15:18Z</dc:date>
@@ -43,12 +43,12 @@
 		<meta property="schema:genre">Nonfiction</meta>
 		<meta property="schema:genre">Spirituality</meta>
 		<meta property="schema:genre">Travel</meta>
-		<dc:description id="description">Hilaire Belloc takes a walking pilgrimage to Rome from his hometown in France, writing of the journey, sketching the sights, and digressing on a wide variety of subjects.</dc:description>
-		<meta id="long-description" property="se:long-description" refines="#description">
+		<dc:abstract>Hilaire Belloc takes a walking pilgrimage to Rome from his hometown in France, writing of the journey, sketching the sights, and digressing on a wide variety of subjects.</dc:abstract>
+		<dc:description>
 			&lt;p&gt;&lt;i&gt;The Path to Rome&lt;/i&gt; is British-French writer and historian &lt;a href="https://standardebooks.org/ebooks/hilaire-belloc"&gt;Hilaire Belloc’s&lt;/a&gt; first travelogue. It describes the pilgrimage he took to Rome as the result of a vow he made while visiting his hometown of Toul, in Lorraine, France. In his own copy of the book, dated May 29, 1904, he notes: “I wrote this book for the glory of God.”&lt;/p&gt;
 			&lt;p&gt;Belloc walked “two and a half hundred leagues” to Rome, over twenty-two days, and arrived in time to hear Mass on the Feast of Saints Peter and Paul. As he walks, he quickly discovers the difficulty of keeping every vow he made before starting, as the days are long, the mountains steep, and his finances stressed. But the book is far more than a simple travelogue; alongside the narrative of the journey, Belloc wanders into topics as varied as the art of writing, life in the military, his Catholic faith, the middle class, literary criticism, music, poetry, and more. His unique politics and personality shine in his many digressions and asides.&lt;/p&gt;
 			&lt;p&gt;&lt;i&gt;The Path to Rome&lt;/i&gt; sold very well, and many critics have viewed it as the book that made Belloc’s name. His great friend &lt;a href="https://standardebooks.org/ebooks/g-k-chesterton"&gt;G. K. Chesterton&lt;/a&gt; said of it in &lt;i&gt;The World&lt;/i&gt;: “&lt;i&gt;The Path to Rome&lt;/i&gt; is the product of the actual and genuine buoyancy and thoughtlessness of a rich intellect. …”&lt;/p&gt;
-		</meta>
+		</dc:description>
 		<dc:language>en-GB</dc:language>
 		<dc:source>https://www.gutenberg.org/ebooks/7373</dc:source>
 		<dc:source>https://archive.org/details/pathtorome00belliala</dc:source>
