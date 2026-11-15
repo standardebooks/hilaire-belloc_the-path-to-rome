@@ -295,7 +295,7 @@ div.bracketed-list-with-label > span{
 	div.bracketed-list-with-label{
 		break-inside: avoid;
 		display: inline-flex;
-		page-break-inside: avoid;
+		break-inside: avoid;
 	}
 
 	div.bracketed-list-with-label > ul{
